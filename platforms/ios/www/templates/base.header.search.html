@@ -1,0 +1,111 @@
+<div ng-if="header.search.isVisible && header.isVisible" label="Formulário da busca" title="Formulário da busca" role="application" class='search'>
+  <ion-header-bar  class="bar bar-calm search">
+      <div class="buttons">
+        <button tabindex=13 ng-click="header.search.isVisible=!header.search.isVisible;" title="Voltar para o inicio" label="Voltar para o Inicio" class="button button-icon flaticon-delete"></button>
+      </div>
+
+      <form name="searchForm" id="searchForm" ng-click="header.search.tip.hide()" ng-class="header.search.tip.isVisible() ? ['titip-bottom-right', 'titip-active', 'titip-wrapped', 'titip-default']: []" class="" data-title="{{header.search.tip.text()}}" ng-submit="header.search.results.init()">
+        <input tabindex=10 type="text" ng-focus=""   ng-model="header.search.term" name="searchField" id="searchField"  class="search" title="O que você procura?" label="" placeholder="O que você procura?">
+        <input ng-show="false" aria-hidden="true" type="submit">
+      </form>
+
+
+      <div class="buttons">
+        <button
+          ng-click="acb.voice('searchField');"
+          tabindex=11
+          class="button button-icon ion-mic-a button-right def"
+          label="Busca por voz"
+          title="Busca por voz"
+        >
+        </button>
+
+        <div class="divider-button" >
+          <button
+            tabindex=12
+            title="Efetuar busca"
+            ng-if="header.buttons.search"
+            ng-click="header.search.results.init();"
+            class="button button-right button-icon flaticon-interface "
+          ></button>
+
+        </div>
+      </div>
+
+  </ion-header-bar>
+
+
+  <ion-scroll scroll="true" class="subheader search" ng-if="!header.search.showResults"  >
+
+
+
+    <acb role="list"  id="places_near" title="Lista de Lugares salvos" >
+      <acb-info role="heading">Lista de lugares salvos</acb-info>
+
+      <ion-list>
+        <ion-item class="item-divider" aria-hidden="true">
+          Convênios próximos a você
+        </ion-item>
+
+
+        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces | limitTo: 2 | orderBy:['justification']">
+
+          <div class="col col-15 col-center" data-title="{{info.status_tip}}" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
+            <i ng-class="home.data.getIconStatus(info.status)"></i><br>
+          </div>
+
+          <div class="col col-75">
+            <p class="">{{info.name}}</p>
+            <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
+
+          </div>
+
+          <div class="col col-10 col-center" on-touch="go('/data/local/'+info.id)">
+            <i class="icon right flaticon-arrows-5"></i>
+          </div>
+        </ion-item>
+
+
+        <ion-item>
+          <a href="#" role="button" ui-sref="user.places"><i class="icon flaticon-round"></i>Mais convênios próximos</a>
+        </ion-item>
+      </ion-list>
+    </acb>
+
+
+    <acb role="list"  id="places_near" title="Lista de Lugares próximos" >
+      <acb-info role="heading">Lista de lugares próximos</acb-info>
+      <ion-list>
+        <ion-item class="item-divider" aria-hidden="true">
+          Convênios monitorados
+        </ion-item>
+
+        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces | limitTo: 2 | orderBy:['proponent']">
+          <div class="col col-15 col-center" data-title="{{info.status_tip}}" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
+            <i ng-class="home.data.getIconStatus(info.status)"></i><br>
+          </div>
+
+
+          <div class="col col-75">
+            <p class="">{{info.name}}</p>
+            <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
+
+          </div>
+
+          <div class="col col-10 col-center" on-touch="go('/data/local/'+info.id)">
+            <i class="icon right flaticon-arrows-5"></i>
+          </div>
+        </ion-item>
+
+        <ion-item>
+          <a href="#" role="button" ui-sref="user.places"><i class="icon flaticon-round"></i>Mais convênios monitorados</a>
+        </ion-item>
+      </ion-list>
+    </acb>
+
+
+    </ion-scroll>
+
+    <ng-include src="'templates/base.header.search.results.html'" ng-if="header.search.showResults"></ng-include>
+
+</div>

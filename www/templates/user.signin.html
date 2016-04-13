@@ -1,0 +1,45 @@
+<ion-view class="signIn formPage" title="signIn"  ng-controller="User">
+  <ion-content class="has-header">
+    <form novalidate="" class="signInForm" id="signInForm" name="signInForm">
+      <ion-list>
+        <div class='ion-group'>
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Email</span>
+              <i class="icon flaticon-interface-2 placeholder-icon"></i>
+              <input type="email" name="code" id="code" required placeholder="Digite seu email" ng-model="signIn.data.code">
+          </label>
+
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Senha</span>
+              <i class="icon flaticon-lock placeholder-icon"></i>
+              <input type="password" name="password" id="password" required placeholder="Digite sua senha" ng-model="signIn.data.password">
+          </label>
+
+        </div>
+
+
+        <div class="buttons">
+          <button ng-class="{'button-disabled': !signIn.isValid(signInForm)}" class="button" ng-click="signIn.login.start(signInForm);">Entrar</button>
+
+          <div class="divider">
+            <div class="text">OU</div>
+          </div>
+
+
+          <button class="button facebook" ng-click="signIn.login.facebook.start()">Login via Facebook</button>
+          <!-- <a ui-sref="base.home">Esqueceu sua senha?</a> -->
+
+          <div class="buttons divider">
+            <div class="text text-big">Não possui uma conta?</div>
+          </div>
+
+          <button class="button" ui-sref="user.signup">Inscreva-se</button>
+
+        </div>
+
+
+      </ion-list>
+
+    </form>
+  </ion-content>
+</ion-view>

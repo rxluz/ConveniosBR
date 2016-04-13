@@ -1,0 +1,233 @@
+<ion-view class="local" title="local" ng-controller="Data" ng-if="acb.voiceover() === true">
+
+    <ion-content>
+
+      <acb-info-visible ng-if="popupIsOpen===false" ><br><br><br>
+        <acb-info-visible role="heading">Museu de Arte Moderrna de São Paulo</acb-info-visible>
+        <a role="button" class="button" href="#" ng-click="comments.all.init(1);">Ver os comentários</a>
+        <a role="button" class="button" href='#' ng-click="review.init(1)"><i class="icon flaticon-shape"></i><br>Avaliar local</a>
+
+        <acb-info-visible >
+          <button class="button" href="#" ng-click="resources.whell=true" >Listar recursos de acessibilidade fisica</button>
+          <acb-info-visible role="list" ng-if="resources.whell">
+            <acb-info-visible role="heading">Recursos de acessibilidade física:</acb-info-visible>
+            <acb-info-visible role="listitem">Rampas</acb-info-visible>
+            <acb-info-visible role="listitem">Guias rebaixadas</acb-info-visible>
+            <acb-info-visible role="listitem">Banheiros adaptados</acb-info-visible>
+          </acb-info-visible>
+        </acb-info-visible>
+
+
+
+        <acb-info-visible ng-click="resources.visual=true;"><button class="button" href="#" role="button" >Listar recursos de acessibilidade visual</button></acb-info-visible>
+
+        <acb-info-visible role="list" ng-if="resources.visual">
+          <acb-info-visible role="heading">Recursos de visual:</acb-info-visible>
+          <acb-info-visible role="listitem">Rampas</acb-info-visible>
+          <acb-info-visible role="listitem">Guias rebaixadas</acb-info-visible>
+          <acb-info-visible role="listitem">Banheiros adaptados</acb-info-visible>
+        </acb-info-visible>
+
+        <acb-info-visible ng-click="resources.hearing=true;">
+          <button class="button" href="#" role="button" >Listar recursos de acessibilidade auditiva</button>
+        </acb-info-visible>
+
+        <acb-info-visible role="list" ng-if="resources.hearing">
+          <acb-info-visible role="heading">Recursos de acessibilidade auditiva:</acb-info-visible>
+          <acb-info-visible role="listitem">Rampas</acb-info-visible>
+          <acb-info-visible role="listitem">Guias rebaixadas</acb-info-visible>
+          <acb-info-visible role="listitem">Banheiros adaptados</acb-info-visible>
+        </acb-info-visible>
+
+
+        <acb-info-visible ng-click="resources.mental=true;">
+          <button class="button" href="#" role="button" >Listar recursos de acessibilidade intelectual</button>
+        </acb-info-visible>
+
+        <acb-info-visible role="list" ng-if="resources.mental">
+          <acb-info-visible role="heading">Recursos de acessibilidade intelectual:</acb-info-visible>
+          <acb-info-visible role="listitem">Rampas</acb-info-visible>
+          <acb-info-visible role="listitem">Guias rebaixadas</acb-info-visible>
+          <acb-info-visible role="listitem">Banheiros adaptados</acb-info-visible>
+        </acb-info-visible>
+
+
+        <acb-info-visible role="contentinfo">Categoria: Museu e arte</acb-info-visible>
+        <acb-info-visible role="contentinfo">Endereço: Rua Coronel Mursa, 220</acb-info-visible>
+        <acb-info-visible role="contentinfo">Distancia até o local: 200m</acb-info-visible>
+        <acb-info-visible role="contentinfo">Avaliação média: 4 de 5 estrelas</acb-info-visible>
+        <acb-info-visible role="contentinfo">25 comentários</acb-info-visible>
+        <acb-info-visible role="contentinfo">Possui recursos de acessibilidade: Física, visual, intelectual e auditiva</acb-info-visible>
+
+
+
+
+        <acb-info-visible>
+          <a role="button" href="#/data/local/22">Ver mais informações do local</a>
+        </acb-info-visible>
+
+      </acb-info-visible>
+
+    </ion-content>
+</ion-view>
+
+<ion-view class="local" title="local" ng-controller="Data" ng-if="acb.voiceover() === false">
+  <ion-content ng-class="{'has-header': scrollInfos.top>180}" scroll="true" on-scroll="scrollData()">
+      <div class="slider">
+        <ion-slide-box  ng-style="{'height': '180px'}" >
+          <ion-slide  ng-click="photo.fullScreen.init()" ng-style="{'background-image': 'url(https://lh5.googleusercontent.com/-UUwhELRI0Zw/VfBvTZs8_9I/AAAAAAAAABQ/ZmSfMbzAc24/s408-k-no/)'}">&nbsp;
+          </ion-slide>
+
+
+          <ion-slide ng-click="photo.fullScreen.init()" ng-style="{'background-image': 'url(https://lh4.googleusercontent.com/-9Mb4ZPatWeA/VorU0OiwmvI/AAAAAAAAAJ4/-j48ZOOI7Qc/s455-k-no/)'}">&nbsp;</ion-slide>
+
+
+          <ion-slide>
+            <a href="#"><i class="icon flaticon-camera" ng-click="photo.add.init(2)"></i><br><br>Adicionar uma foto</a>
+          </ion-slide>
+
+        </ion-slide-box>
+      </div>
+
+      <button class="fab fab-right icon-only button-assertive button"   >
+        <i class="flaticon-train"></i>
+      </button>
+
+
+      <ion-item class="local-header item-text-wrap item-bottom-border"   >
+        <h3>Museu de Arte Moderna de São Paulo <small>1,2km</small></h3>
+        <p>Estação de trem </p>
+        <p><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings> <small>25 comentários</small></p>
+
+        <div class="row">
+          <div class="col col-33 "><a href="#" ng-click="route.start()"><i class="icon flaticon-transport"></i><br>Criar rota segura</a></div>
+          <div class="col col-33 divider-left"><a href="#"><i class="icon flaticon-round"></i><br>Salvar local</a></div>
+          <div class="col col-33 divider-left"><a href='#' ng-click="review.init(1)"><i class="icon flaticon-shape"></i><br>Avaliar local</a></div>
+        </div>
+      </ion-item>
+
+      <ion-item class="item-icon-left item-text-wrap"   >
+        <i class="icon flaticon-train"></i>
+        <p>Av: Pedro Álvares Cabral, s/nº, São Paulo - SP</p>
+      </ion-item>
+
+      <ion-item  class="item-icon-left item-icon-right item-text-wrap  item-bottom-border" >
+        <i class="icon left flaticon-logo"></i>
+        <a href="#">Mais informações do local</a>
+        <i class="icon right flaticon-arrows-5"></i>
+      </ion-item>
+
+
+
+      <div  class="tab-wrap" >
+
+        <!-- active tab on page load gets checked attribute -->
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+        <label for="tab1">Física</label>
+
+        <input type="radio" id="tab2" name="tabGroup1" class="tab">
+        <label for="tab2">Visual</label>
+
+        <input type="radio" id="tab3" name="tabGroup1" class="tab">
+        <label for="tab3">Auditiva</label>
+
+        <input type="radio" id="tab4" name="tabGroup1" class="tab">
+        <label for="tab4">Intelectual</label>
+
+        <div class="tab__content">
+          Rampas / Guias rebaixadas / Banheiros adaptados / Espaço para movimentação de cadeira de rodas / Telefones públicos adaptados / Bebedouros adaptados / Local com boa iluminação
+
+        </div>
+
+        <div class="tab__content">
+          <h3>Visual</h3>
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+
+        <div class="tab__content">
+          <h3>Auditiva</h3>
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+
+
+        <div class="tab__content">
+          <h3>Intelectual</h3>
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+      </div>
+
+
+      <ion-list class="comment" role="list">
+        <ion-item class="item-divider">
+          Principais comentários<small><a href="#" ng-click="comments.all.init(1);">Ver todos</a></small>
+        </ion-item>
+
+        <ion-item class="row item-text-wrap item-padding-top item-bottom-border" ng-repeat="x in [0, 1, 2]" role="listitem">
+
+            <div class="col col-center col-20" role="button" title="Denunciar esse comentário" ng-click="comments.flag.init(1)">
+              <div class="row item-avatar-left" >
+                <img src="http://placehold.it/100x100" alt="">
+              </div>
+
+              <div class="row">
+                <a href="#" ><i class="ion-more"></i></a>
+              </div>
+            </div>
+
+            <div class="col col-67" ng-click="comments.flag.init(1)">
+              <h4 role="heading">Ricardo Silva <small  role="contentinfo">em 12/04/15 às 15:14</small></h4>
+              <acb-info>postado em 12/04/15 às 15:14</acb-info>
+              <p role="contentinfo">A rampa possui a inclinação adequada</p>
+              <p aria-hidden="false"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+            </div>
+
+            <div class="col col-center" role="button">
+              <i class="icon flaticon-thumb"></i>
+              <acb-info>Curtir esse comentário</acb-info>
+            </div>
+
+        </ion-item>
+
+        <ion-item class="buttons item-bottom-border">
+            <button class="button button-calm" ng-click="review.init(1)">Avaliar local</button><br><br>
+            <a href="#">Adicionar um comentário</a>
+        </ion-item>
+      </ion-list>
+
+
+
+      <div  class="row more-options item-bottom-border" >
+        <div class="col col-50 col-center" ng-click="urlExternal('https://www.google.com.br/maps/place/Mau%C3%A1,+SP/@-23.6633981,-46.4156233,3a,75y,142h,90t/data=!3m7!1e1!3m5!1s1FqkrV1IVeZ0_RXgk27o_w!2e0!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3D1FqkrV1IVeZ0_RXgk27o_w%26output%3Dthumbnail%26cb_client%3Dsearch.TACTILE.gps%26thumb%3D2%26w%3D234%26h%3D106%26yaw%3D142.58725%26pitch%3D0!7i13312!8i6656!4m2!3m1!1s0x94ce69549e48e43f:0xe210627a68fc88df!6m1!1e1')">
+          <img src="http://placehold.it/400x200" alt=""><br>
+          <a href="#">Abrir Street View</a>
+
+        </div>
+        <div class="col col-50 col-center" ng-click="photo.fullScreen.init()">
+          <img src="http://placehold.it/400x200" alt=""><br>
+          <a href="#" >Ver Fotos</a>
+        </div>
+      </div>
+
+
+      <div class="more-options item-bottom-border" >
+        <a href="#"><i class="icon flaticon-camera" ng-click="photo.add.init(2)"></i><br>Adicionar uma foto</a>
+      </div>
+
+
+  </ion-content>
+
+</ion-view>

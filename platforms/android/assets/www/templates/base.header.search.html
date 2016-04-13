@@ -1,0 +1,116 @@
+<div ng-if="header.search.isVisible && header.isVisible" label="Formulário da busca" title="Formulário da busca" role="application" class='search'>
+  <ion-header-bar  class="bar bar-calm search">
+      <div class="buttons">
+        <button tabindex=13 ng-click="header.search.isVisible=!header.search.isVisible;" title="Voltar para o inicio" label="Voltar para o Inicio" class="button button-icon flaticon-delete"></button>
+      </div>
+
+      <form name="searchForm" id="searchForm" ng-click="header.search.tip.hide()" ng-class="header.search.tip.isVisible() ? ['titip-bottom-right', 'titip-active', 'titip-wrapped', 'titip-default']: []" class="" data-title="{{header.search.tip.text()}}" ng-submit="header.search.results.init()">
+        <input tabindex=10 type="text" ng-focus=""   ng-model="header.search.term" name="searchField" id="searchField"  class="search" title="Digite o nome do local procurado" label="" placeholder="Digite o nome do local procurado">
+        <input ng-show="false" aria-hidden="true" type="submit">
+      </form>
+
+
+      <div class="buttons">
+        <button
+          ng-click="acb.voice('searchField');"
+          tabindex=11
+          class="button button-icon ion-mic-a button-right def"
+          label="Busca por voz"
+          title="Busca por voz"
+        >
+        </button>
+
+        <div class="divider-button" >
+          <button
+            tabindex=12
+            title="Efetuar busca"
+            ng-if="header.buttons.search"
+            ng-click="header.search.results.init();"
+            class="button button-right button-icon flaticon-interface "
+          ></button>
+
+        </div>
+      </div>
+
+  </ion-header-bar>
+
+
+  <ion-scroll scroll="true" class="subheader search" ng-if="!header.search.showResults"  >
+
+
+
+    <acb role="list"  id="places_near" title="Lista de Lugares salvos" >
+      <acb-info role="heading">Lista de lugares salvos</acb-info>
+
+      <ion-list>
+        <ion-item class="item-divider" aria-hidden="true">
+          Lugares salvos
+        </ion-item>
+
+        <ion-item  class="row item item-bottom-border item-padding-top item-text-wrap" ng-repeat="x in [0, 1] track by $index" on-touch="go('/data/local/22')">
+
+          <div class="col col-15 col-center" aria-hidden="true">
+            <i class="icon left flaticon-square"></i><br>
+            <p>200m</p>
+          </div>
+
+          <div class="col col-75" role="listitem" aria-setsize="2"  aria-posinset="{{$index}}">
+            <p >Museu de Arte Moderna de São Paulo
+            <acb-info role="note">Distancia: 200m</acb-info></p>
+
+
+            <acb-info><a role="button" href="#" class="button buttons-aria" on-touch="go('/data/local/22')"><i class="icon right flaticon-arrows-5">Ver mais informações do local</i></a></acb-info>
+
+          </div>
+
+          <div class="col col-10 col-center" aria-hidden="true"  >
+            <a href="#" ng-click="go('/data/local/22')" title="Ver mais informações do local"><i class="icon right flaticon-arrows-5"></i></a>
+          </div>
+        </ion-item>
+
+        <ion-item>
+          <a href="#" role="button" ui-sref="user.places"><i class="icon flaticon-round"></i>Mais do meu histórico</a>
+        </ion-item>
+      </ion-list>
+    </acb>
+
+
+    <acb role="list"  id="places_near" title="Lista de Lugares próximos" >
+      <acb-info role="heading">Lista de lugares próximos</acb-info>
+      <ion-list>
+        <ion-item class="item-divider" aria-hidden="true">
+          Lugares próximos
+        </ion-item>
+
+        <ion-item  class="row item item-bottom-border item-padding-top item-text-wrap" ng-repeat="x in [0, 1] track by $index" on-double-tap="go('/data/local/22')">
+
+          <div class="col col-15 col-center" aria-hidden="true">
+            <i class="icon left flaticon-pin"></i><br>
+            <p>200m</p>
+          </div>
+
+          <div class="col col-75" role="listitem" aria-setsize="2"  aria-posinset="{{$index}}">
+            <p >Museu de Arte Moderna de São Paulo
+            <acb-info role="note">Distancia: 200m</acb-info></p>
+
+
+            <a role="button" href="#" class="buttons-aria" ng-click="go('/data/local/22')"><i class="icon right flaticon-arrows-5"><acb-info>Ver mais informações do local</acb-info></i></a>
+          </div>
+
+          <div class="col col-10 col-center" aria-hidden="true"  >
+            <a href="#" ng-click="go('/data/local/22')" title="Ver mais informações do local"><i class="icon right flaticon-arrows-5"></i></a>
+          </div>
+        </ion-item>
+
+        <ion-item>
+          <a href="#" role="button" ui-sref="user.places"><i class="icon flaticon-round"></i>Mais lugares próximos</a>
+        </ion-item>
+      </ion-list>
+    </acb>
+
+
+    </ion-scroll>
+
+    <ng-include src="'templates/base.header.search.results.html'" ng-if="header.search.showResults"></ng-include>
+
+</div>

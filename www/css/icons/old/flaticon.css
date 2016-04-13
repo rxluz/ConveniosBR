@@ -1,0 +1,57 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 10/03/2016 20:55
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-family: Flaticon;
+font-style: normal;
+
+}
+
+.flaticon-arrow:before { content: "\f100"; }
+.flaticon-arrows:before { content: "\f101"; }
+.flaticon-arrows-1:before { content: "\f102"; }
+.flaticon-arrows-2:before { content: "\f103"; }
+.flaticon-black:before { content: "\f104"; }
+.flaticon-black-1:before { content: "\f105"; }
+.flaticon-black-2:before { content: "\f106"; }
+.flaticon-black-3:before { content: "\f107"; }
+.flaticon-black-4:before { content: "\f108"; }
+.flaticon-cellphone:before { content: "\f109"; }
+.flaticon-close:before { content: "\f10a"; }
+.flaticon-computer:before { content: "\f10b"; }
+.flaticon-favorite:before { content: "\f10c"; }
+.flaticon-info:before { content: "\f10d"; }
+.flaticon-interface:before { content: "\f10e"; }
+.flaticon-interface-1:before { content: "\f10f"; }
+.flaticon-music:before { content: "\f110"; }
+.flaticon-open:before { content: "\f111"; }
+.flaticon-people:before { content: "\f112"; }
+.flaticon-phone:before { content: "\f113"; }
+.flaticon-search:before { content: "\f114"; }
+.flaticon-shapes:before { content: "\f115"; }
+.flaticon-social:before { content: "\f116"; }
+.flaticon-social-1:before { content: "\f117"; }
+.flaticon-square:before { content: "\f118"; }
+.flaticon-square-1:before { content: "\f119"; }
+.flaticon-tool:before { content: "\f11a"; }

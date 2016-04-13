@@ -1,0 +1,34 @@
+{
+  "name": "ionic-select-control",
+  "version": "1.5.2",
+  "description": "Skinnable select control for Ionic framework",
+  "main": "index.js",
+  "author": {
+    "name": "OSAMES",
+    "url": "https://github.com/OSAMES/ionic-Select-Control"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ionic-select-control",
+    "ionic",
+    "select control for ionic"
+  ],
+  "homepage": "https://github.com/OSAMES/ionic-Select-Control",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.5.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.5.2",
+    "commit": "d1e968227478723fcbb5689cd4e601bc3f4f0894"
+  },
+  "_source": "git://github.com/OSAMES/ionic-Select-Control.git",
+  "_target": "^1.5.2",
+  "_originalSource": "ionic-select-control",
+  "_direct": true
+}

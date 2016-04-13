@@ -1,0 +1,120 @@
+<ion-side-menus enable-menu-with-back-views="false"  >
+  <ion-side-menu-content >
+    <ion-nav-view  name="baseContent"></ion-nav-view>
+    <div ng-if="menu.left.isVisible() || header.search.isVisible || header.email.isVisible || header.filter.isVisible" >
+      <div class="subHeaderActive">
+      </div>
+    </div>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" aria-hidden="{{!menu.left.isVisible()}}" >
+    <ion-content class="no-scroll-content" scroll="false" >
+      <div class="top" ng-if="loginInfos.isLogged==false">
+        <a href="#" ui-sref="base.home" label="Fechar o menu" title="Fechar o menu" menu-close>
+          <img src="img/base_menu_logo_header.png"  alt="">
+        </a>
+      </div>
+
+      <div class="buttons" ng-if="loginInfos.isLogged==false">
+        <a href="#" class="button" ui-sref="user.signup" menu-close>Inscreva-se</a>
+        <a href="#" class="button" ui-sref="user.signin"  menu-close>Login</a>
+      </div>
+
+      <div aria-hidden="true" class="logged" ng-if="loginInfos.isLogged==true" ng-click="loginInfos.isOpen=!loginInfos.isOpen">
+        <ion-item class="item-avatar-left item-text-wrap" href="#">
+          <img ng-src="{{loginInfos.photo()}}">
+          Olá, {{loginInfos.name}}<br>
+          Seja bem vindo!
+        </ion-item>
+
+        <div class="options" >
+          <a  class="item">
+            <i ng-class="{'flaticon-arrows-1': loginInfos.isOpen==true, 'flaticon-arrows-2':  loginInfos.isOpen==false}" class="icon-round " ><acb-info ng-if="loginInfos.isOpen==true">Fechar as opções do usuário</acb-info>
+            <acb-info ng-if="loginInfos.isOpen==false">Fechar as opções do usuário</acb-info>
+            </i>
+          </a>
+        </div>
+      </div>
+
+      <acb-info aria-hidden="false"  ng-if="acb.voiceover() === true && loginInfos.isLogged==true">
+        Olá, {{loginInfos.name}},
+        Seja bem vindo!
+      </acb-info>
+
+    <div aria-hidden="false" class="logged" ng-if="acb.voiceover() === true && loginInfos.isLogged==true" ng-click="loginInfos.isOpen=!loginInfos.isOpen">
+
+      <acb-info aria-hidden="false">
+        <a href="#" role="button" class="item">
+          <i ng-class="{'flaticon-arrows-1': loginInfos.isOpen==true, 'flaticon-arrows-2':  loginInfos.isOpen==false}" class="icon-round " ><acb-info ng-if="loginInfos.isOpen==true">Fechar as opções do usuário</acb-info>
+          <acb-info ng-if="loginInfos.isOpen==false">Abrir as opções do usuário</acb-info>
+          </i>
+        </a>
+      </acb-info>
+    </div>
+
+
+      <ion-scroll>
+        <div class='userOptions menuItems' ng-if="loginInfos.isOpen && loginInfos.isLogged">
+          <ul class="list" ng-controller="User" >
+            <a href="#" class="item item-icon-left"  ui-sref="user.places"  menu-close>
+              <i class="icon flaticon-favorite"></i>Meus locais
+            </a>
+
+            <a href="#" class="item item-icon-left"  ui-sref="user.reviews"  menu-close>
+              <i class="icon flaticon-shape"></i>Locais avaliados
+            </a>
+
+
+            <a href="#" class="item item-icon-left"  ui-sref="user.edit"  menu-close>
+              <i class="icon flaticon-social"></i>Editar meu perfil
+            </a>
+
+            <a href="#" ui-sref="user.password" class="item item-icon-left" menu-close>
+              <i class="icon flaticon-web"></i>Alterar senha
+            </a>
+
+            <a href="#"  class="item item-icon-left" ui-sref="user.cancel" menu-close>
+              <i class="icon flaticon-circle-1"></i>Cancelar minha conta
+            </a>
+
+            <a href="#" ng-click="signIn.login.logout.start();" class="item item-icon-left" menu-close>
+              <i class="icon flaticon-delete"></i>Sair
+            </a>
+          </ul>
+        </div>
+
+        <div class='main menuItems' ng-if="!loginInfos.isOpen || !loginInfos.isLogged">
+          <ul class="list">
+            <a href="#" class="item item-icon-left" ng-click="route.start()" menu-close>
+              <i class="icon flaticon-transport"></i>Criar rota segura
+            </a>
+
+            <a href="#" ng-click="header.search.init(false)" class="item item-icon-left" menu-close>
+              <i class="icon flaticon-interface"></i>Pesquisar um local
+            </a>
+
+            <a href="#" class="item item-icon-left" ng-click="header.search.init(true)" menu-close>
+              <i class="icon flaticon-shapes"></i>Avaliar um local
+            </a>
+
+            <a href="#" class="item item-icon-left" ng-click="header.search.init(false, true)" menu-close>
+              <i class="icon flaticon-map-location"></i>Adicionar local ao mapa
+            </a>
+
+            <a href="#" ui-sref="others.feedback" class="item item-icon-left" menu-close>
+              <i class="icon flaticon-people"></i>Feedback e suporte
+            </a>
+
+            <a href="#" ui-sref="others.about" class="item item-icon-left" menu-close>
+              <i class="icon flaticon-interface-1"></i>Sobre o Urban Maps
+            </a>
+
+            <a href="#" class="item item-icon-left" menu-close>
+              <i class="icon flaticon-shape"></i>Avaliar aplicativo
+            </a>
+          </ul>
+        </div>
+      </ion-scroll>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

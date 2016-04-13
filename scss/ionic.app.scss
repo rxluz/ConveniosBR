@@ -1,0 +1,67 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+*/
+
+$light:                           #963f00 !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #00636c !default;
+$balanced:                        #006369 !default;
+$energized:                       #9b302f !default;
+$assertive:                       #5C6880 !default;
+$royal:                           #456365 !default;
+$dark:                            #5C6880 !default;
+
+
+@mixin round_icons($color, $backcolor, $font_size: 2.0, $border-color: none)
+{
+  background-color: $backcolor;
+  width: #{16.5*$font_size}px;
+  height: #{16.5*$font_size}px;
+  color: $color;
+  padding: #{8 * $font_size}px;
+  font-size: #{$font_size}rem;
+  border-radius: #{25.5 * $font_size}px;
+  border-color: $border-color;
+  @if $border-color == none {
+    border-style: none;
+  } @else {
+    border-style: solid;
+  }
+
+}
+
+
+@mixin arrow_up($color, $size: 34px) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 $size $size $size;
+  border-color: transparent transparent $color transparent;
+  //border-top: 18px solid #53afa0;
+}
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+@import "www/lib/animatewithsass/animate.scss";
+
+@import "base.scss";
+@import "others.scss";
+@import "data.scss";
+@import "user.scss";
+@import "route.scss";
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+//@import "www/lib/flaticons/_flaticon.scss";

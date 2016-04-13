@@ -1,0 +1,39 @@
+<div class='routeBackdrop'>
+  <div class='route'>
+    <ion-header-bar  >
+        <div class="buttons">
+          <button ng-click="route.close()" class="button button-icon flaticon-delete"></button>
+          <i class="icon flaticon-pin"></i>
+          <i class="icon ion-arrow-swap"></i>
+        </div>
+    </ion-header-bar>
+
+    <ion-content scroll="false" class="formPage">
+      <form>
+        <ion-list>
+          <div class='ion-group'>
+            <label class="item item-input item-floating-label">
+               <span class="input-label">Origem</span>
+                <i class="icon flaticon-map-location placeholder-icon"></i>
+                <input type="text" required placeholder="Origem" ng-model="userEdit.data.name">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Destino</span>
+                <i class="icon flaticon-map placeholder-icon"></i>
+                <input type="text" required placeholder="Destino" ng-model="userEdit.data.email">
+            </label>
+
+          </div>
+
+          <div class="buttons">
+            <button ng-class="{'button-disabled': !userEdit.isValid(userEditForm)}" class="button" ng-click="userEdit.save.start(userEditForm);">Criar rota segura</button>
+          </div>
+
+        </ion-list>
+      </form>
+
+    </ion-content>
+
+  </div>
+</div>

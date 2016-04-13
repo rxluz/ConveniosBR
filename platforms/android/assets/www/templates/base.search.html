@@ -1,0 +1,86 @@
+<ion-view class="search" title="Favoritos" >
+    <ion-tabs class="tabs-energized tabs-icon-top has-header"  >
+      <ion-tab title="Artistas" icon-on="flaticon-music"  icon-off="flaticon-music">
+        <ion-content class="has-header">
+          <div ng-class="{'subHeaderActive':header.search.isVisible || header.email.isVisible || header.filter.isVisible || menu.left.isVisible()} " >
+            <img src="img/ads_model.gif" class="ads"></img>
+
+            <div class="card" ng-if="search.performer.data.length=='0' && search.performer.loading===false">
+              <div class="item item-text-wrap">
+                Nenhum artista encontrado
+              </div>
+            </div>
+
+            <ion-list>
+              <ion-item class=" item-avatar-left" href="#" ng-repeat="d in search.performer.data">
+                <img ng-if="d.img_performer!=='' && d.img_performer!==' '" ng-src="http://www.showbusiness.com.br/show/img/artistasimg/{{d.img_performer}}">
+                <h2>{{d.name_performer}}</h2>
+                <p>{{d.manager}}</p>
+                <p>{{d.city}}, {{d.state}}</p>
+                <p><i class="flaticon-phone"></i>&nbsp;&nbsp; {{d.telephone}}</p>
+                <i class="flaticon-black-3 action"></i>
+                <a ng-click="sendEmail.start(d.id, d, 0);" class="email">Email</a>
+
+                <i ng-if="d.bookmark === true" class="flaticon-favorite enabled"></i><a ng-if="d.bookmark === true" ng-click="bookmarks.remove.start(d.id, 0)" class="email">Favorito</a>
+
+                <i ng-if="d.bookmark === false" class="flaticon-favorite"></i><a ng-if="d.bookmark === false" ng-click="bookmarks.add.start(d.id, 0)" class="email">Favorito</a>
+              </ion-item>
+
+
+
+            </ion-list>
+
+            <ion-infinite-scroll
+              ng-if="search.performer.more.hasMore===true"
+              on-infinite="search.performer.more.start()"
+              distance="1%"
+              spinner="ripple">
+            </ion-infinite-scroll>
+          </div>
+        </ion-content>
+
+
+
+
+      </ion-tab>
+
+      <ion-tab title="Produtores"  icon-on="flaticon-people" icon-off="flaticon-people">
+        <ion-content class="has-header" >
+          <div ng-class="{'subHeaderActive':header.search.isVisible || header.email.isVisible || header.filter.isVisible || menu.left.isVisible()} " >
+            <img src="img/ads_model.gif" class="ads"></img>
+            <div class="card" ng-if="search.agent.data.length=='0' && search.agent.loading===false">
+              <div class="item item-text-wrap">
+                Nenhum produtor encontrado
+              </div>
+            </div>
+
+            <ion-list>
+              <ion-item class="item-text" href="#" ng-repeat="d in search.agent.data">
+                <h2>{{d.name_agent}}</h2>
+                <p>{{d.city}}, {{d.state}}</p>
+                <p><i class="flaticon-phone"></i>&nbsp;&nbsp; {{d.telephone}}</p>
+                <i class="flaticon-black-3 action"></i>
+                <a ng-click="sendEmail.start(d.id, d, 1);" class="email">Email</a>
+
+                <i ng-if="d.bookmark === true" class="flaticon-favorite enabled"></i><a ng-if="d.bookmark === true" ng-click="bookmarks.remove.start(d.id, 1)" class="email">Favorito</a>
+
+                <i ng-if="d.bookmark === false" class="flaticon-favorite"></i><a ng-if="d.bookmark === false" ng-click="bookmarks.add.start(d.id, 1)" class="email">Favorito</a>
+              </ion-item>
+              <ion-item><br><br><br>
+              </ion-item>
+            </ion-list>
+
+            <ion-infinite-scroll
+              ng-if="search.agent.more.hasMore===true"
+              on-infinite="search.agent.more.start()"
+              distance="1%"
+              spinner="ripple">
+            </ion-infinite-scroll>
+          </div>
+        </ion-content>
+      </ion-tab>
+    </ion-tabs>
+
+
+
+</ion-view>

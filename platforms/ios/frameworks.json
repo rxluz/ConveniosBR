@@ -1,0 +1,15 @@
+{
+    "ImageIO.framework": 1,
+    "CoreLocation.framework": 2,
+    "AVFoundation.framework": 1,
+    "SystemConfiguration.framework": 3,
+    "CoreTelephony.framework": 1,
+    "libz.dylib": 1,
+    "CFNetwork.framework": 2,
+    "Social.framework": 1,
+    "MessageUI.framework": 1,
+    "QuartzCore.framework": 1,
+    "AudioToolbox.framework": 1,
+    "Security.framework": 1,
+    "MediaAccessibility.framework": 1
+}

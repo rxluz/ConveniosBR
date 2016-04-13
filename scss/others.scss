@@ -1,0 +1,100 @@
+.onboarding{
+  background-size: cover;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.onboardingOne{
+    //background-color: #a43e3c;
+    background-image: url("../img/others_onboarding_one.png"),linear-gradient(#a1bcb3, #a1bcb3);
+    @include fadeIn(
+      $duration: 2.5s
+    );
+  }
+
+  &.onboardingTwo{
+    background-image: url("../img/others_onboarding_two.png"),linear-gradient(#c2c3c2, #b5dbcc);
+
+
+
+    @include fadeIn(
+      $duration: 2.5s
+    );
+  }
+
+  &.onboardingThree{
+    background-image: url("../img/others_onboarding_three.png"),linear-gradient(to right, #84a786, #bcd3cf);
+
+    @include fadeIn(
+      $duration: 2.5s
+    );
+  }
+
+  .bar-footer {
+      background-color: rgba(100, 100, 100, 0.8);
+      color: white;
+  }
+
+  .slider{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 400px;
+    top: 0px;
+
+    .slider-pager {
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        width: 100%;
+        height: 15px;
+        text-align: center;
+    }
+
+    ion-slide{
+      width: 100%;
+      padding-top: 80px;
+      color: white;
+      text-align: center;
+      font-size: 1.1rem;
+
+      img{
+        padding-bottom: 15px;
+      }
+
+      .button{
+        top: 10px;
+        width: 110px;
+        background-color: #2B4243;
+      }
+    }
+  }
+}
+
+
+.about{
+  background-color: #F8F8F8;
+  text-align: center;
+  img{
+    max-width: 100%;
+  }
+.list{
+  margin-bottom: 30px !important;
+}
+  ion-item{
+    color: #595959;
+    height: 34px;
+  }
+}
+
+.performerAdd{
+  background-color: $royal;
+  color: white;
+
+  button{
+    background-color: darken($royal, 10%) !important;
+  }
+
+  .scroll{
+    padding: 25px;
+  }
+}

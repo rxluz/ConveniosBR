@@ -1,0 +1,64 @@
+<ion-modal-view class="formPage" ng-class="modal.close.class+'-full'">
+  <ion-header-bar ng-class="header.class">
+    <div class="buttons">
+        <button
+          ng-click="modal.close.start();"
+          class="button button-icon flaticon-close button-right def"
+          ></button>
+    </div>
+
+    <h1 class="title">
+      Enviar email
+    </h1>
+  </ion-header-bar>
+
+  <ion-content ng-class="[header.class, modal.close.class]" scroll="true" class="has-header">
+    <form novalidate="" class="emailForm"   name="emailForm" id="emailForm">
+      <ion-list>
+        <ion-item class="item-avatar-left item-avatar-left-email" href="#" ng-if="sendEmail.type==0">
+          <img ng-if="sendEmail.info.img_performer!=='' && sendEmail.info.img_performer!==' '" ng-src="http://www.showbusiness.com.br/show/img/artistasimg/{{sendEmail.info.img_performer}}">
+          <h2>{{sendEmail.info.name_performer}}</h2>
+          <p>{{sendEmail.info.manager}}, <br>{{sendEmail.info.city}}, {{sendEmail.info.state}}</p>
+        </ion-item>
+
+        <ion-item class="item-avatar-left-email item-avatar-left item-text" href="#" ng-if="sendEmail.type==1">
+          <h2>{{sendEmail.info.name_agent}}</h2>
+          <p>{{sendEmail.info.city}}, {{sendEmail.info.state}}</p>
+        </ion-item>
+
+
+        <div class='ion-group ion-group-infos-above'>
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Seu nome</span>
+              <i class="icon flaticon-black-1 placeholder-icon"></i>
+              <input type="text" required placeholder="Digite seu nome" ng-model="sendEmail.data.name">
+          </label>
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Email</span>
+              <i class="icon flaticon-black-3 placeholder-icon"></i>
+              <input type="email" required placeholder="Digite seu email" ng-model="sendEmail.data.email">
+          </label>
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Telefone</span>
+              <i class="icon flaticon-phone placeholder-icon"></i>
+              <input type="text" required placeholder="Digite seu telefone" ui-br-phone-number ng-model="sendEmail.data.telephone">
+          </label>
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Mensagem</span>
+              <i class="icon ion-clipboard placeholder-icon"></i>
+              <textarea required placeholder="Mensagem" ng-model="sendEmail.data.obs"></textarea>
+          </label>
+        </div>
+
+        <div class="buttons">
+          <button ng-class="{'button-disabled': !sendEmail.isValid(emailForm)}" ng-click="sendEmail.save.start(emailForm, modal)" class="button">Enviar email</button>
+        </div>
+
+      </ion-list>
+
+    </form>
+  </ion-content>
+</ion-modal-view>

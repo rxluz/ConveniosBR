@@ -1,0 +1,75 @@
+<div class="bar bar-subheader bar-tips" ng-if="header.search.isVisible">
+</div>
+
+<ion-view class="home" title="Home"  >
+    <ion-content scroll="false">
+
+    <div aria-hidden="true" >
+      <ion-tabs class="tabs-calm tabs-icon-top">
+
+        <ion-tab title="Mapa" icon-on="flaticon-map-location" icon-off="flaticon-map-location">
+          <ng-map
+            class="ng-map"
+            aria-hidden="true"
+
+            aria-hidden="true"
+            styles="{{map.style.data}}"
+            center="brazil"
+            zoom="3"
+            pan-control="true"
+            pan-control-options="{position:'TOP_RIGHT'}"
+            map-type-control="false"
+            zoom-control="true"
+            zoom-control-options="{style:'LARGE', position:'LEFT_CENTER'}"
+            scale-control="true"
+            street-view-control="false"
+            ></ng-map>
+        </ion-tab>
+
+
+        <ion-tab title="Lista" role="tab"  icon-on="flaticon-book" icon-off="flaticon-book">
+          <ion-scroll class="search listHome">
+              <ion-list>
+                <ion-item class="item-divider">
+                  Resultados da sua busca
+                </ion-item>
+
+                <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="x in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+                  <div class="col col-15 col-center">
+                    <i class="icon left flaticon-square"></i><br>
+                    <p>200m</p>
+                  </div>
+
+                  <div class="col col-75">
+                    <p class="">Museu de Arte Moderrna de São Paulo</p>
+
+                    <div class="row">
+                      <div class="col col-40"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+                      <div class="col col-60"><p><a href="#">(25 comentários)</a></p></div>
+                    </div>
+
+                    <p>Rua Coronel Mursa, 220</p>
+                    <div class="row">
+                      <div class="col col-50">
+                        <i class="icon flaticon-people-2"></i>
+                        <i class="icon flaticon-help"></i>
+                        <i class="icon flaticon-people-3"></i>
+                        <i class="icon flaticon-medical"></i>
+                      </div>
+
+                      <div class="col col-25"></div>
+                      <div class="col col-25"></div>
+                    </div>
+                  </div>
+
+                  <div class="col col-10 col-center">
+                    <i class="icon right flaticon-arrows-5"></i>
+                  </div>
+                </ion-item>
+              </ion-list>
+          </ion-scroll>
+        </ion-tab>
+      </ion-tabs>
+    </div>
+  </ion-content>
+</ion-view>

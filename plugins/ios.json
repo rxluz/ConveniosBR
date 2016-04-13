@@ -1,0 +1,61 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-appavailability": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "org.apache.cordova.speech.speechrecognition": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "phonegap-plugin-mobile-accessibility": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        },
+        "cordova-plugin-webserver": {
+            "PACKAGE_NAME": "com.ionicframework.alertaconv"
+        }
+    }
+}

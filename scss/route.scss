@@ -1,0 +1,50 @@
+.routeBackdrop{
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.route{
+  background-color: #096272;
+  height: 220px !important;
+  button{
+    color: white !important;
+  }
+  //vertical-align: top;
+  ion-header-bar{
+    height: 40px !important;
+    top: 0px;
+    position: absolute;
+
+    i.flaticon-pin{
+      position: absolute;
+      top: 79px;
+      left: 11px;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    i.ion-arrow-swap{
+      font-size: 1.7rem;
+      color: white;
+      position: absolute;
+      right: 10px;
+      top: 68px;
+      -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+  }
+
+  ion-content{
+    position: absolute !important;
+    top: 10px !important;
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}

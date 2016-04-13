@@ -1,0 +1,56 @@
+<ion-view class="user password formPage" title="edit" ng-controller="User">
+  <div class="profile has-header bar-subheader-p" >
+    <ion-list>
+      <ion-item class="item-avatar-left" href="#">
+        <img ng-src="{{loginInfos.photo()}}">
+        <b>{{loginInfos.name}}</b><br>
+        {{loginInfos.email}}
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-content class='has-header has-subheader'>
+    <ion-scroll>
+
+
+      <form novalidate="" class="cancelForm" id="cancelForm">
+
+
+        <ion-list>
+          <div class='ion-group'>
+            <ion-list>
+              Ficamos triste que você decidiu cancelar sua conta, preencha o formulário abaixo para concluir o cancelamento:
+            </ion-list>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Digite a sua senha atual</span>
+                <i class="icon flaticon-lock placeholder-icon"></i>
+                <input type="password" placeholder="Digite sua senha atual" ng-model="nowpass">
+            </label>
+
+
+            <label class="item-select item">
+                <select-box ng-Selected-Value="selectedValue"
+                      ng-Selected-Id="selectedId"
+                      ng-Item-Name="name"
+                      ng-Item-Id="id"
+                      ng-title="Motivo do cancelamento"
+                      ng-data="userCancel.list.data"
+                      ng-placeholder="Motivo do cancelamento"
+                      ng-icon="flaticon-editing"
+                >
+                </select-box>
+            </label>
+          </div>
+
+          <div class="buttons">
+            <button class="button icon-right">Cancelar minha conta</button>
+          </div>
+
+        </ion-list>
+
+      </form>
+    </ion-scroll>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,144 @@
+<ion-view class="local" title="local" ng-controller="Data">
+  <ion-content ng-class="{'has-header': scrollInfos.top>180}" scroll="true" on-scroll="scrollData()">
+      <div class="slider">
+        <ion-slide-box  ng-style="{'height': '180px'}" >
+          <ion-slide  ng-click="photo.fullScreen.init()" ng-style="{'background-image': 'url(https://lh5.googleusercontent.com/-UUwhELRI0Zw/VfBvTZs8_9I/AAAAAAAAABQ/ZmSfMbzAc24/s408-k-no/)'}">&nbsp;
+          </ion-slide>
+
+
+          <ion-slide ng-click="photo.fullScreen.init()" ng-style="{'background-image': 'url(https://lh4.googleusercontent.com/-9Mb4ZPatWeA/VorU0OiwmvI/AAAAAAAAAJ4/-j48ZOOI7Qc/s455-k-no/)'}">&nbsp;</ion-slide>
+
+
+          <ion-slide>
+            <a href="#"><i class="icon flaticon-camera" ng-click="photo.add.init(2)"></i><br><br>Adicionar uma foto</a>
+          </ion-slide>
+
+        </ion-slide-box>
+      </div>
+
+      <button class="fab fab-right icon-only button-assertive button"   >
+        <i class="ion-ios-flag"></i>
+      </button>
+
+
+      <ion-item class="local-header item-text-wrap item-bottom-border"   >
+        <h3>{{infos.name}} </h3>
+        <p><i class="icon ion-pin"></i> {{infos.proponent}} </p>
+        <p><ionic-ratings ratingsobj='timeObject'></ionic-ratings><br>
+        <ionic-ratings ratingsobj='moneyObject'></ionic-ratings></p>
+
+        <div class="row">
+          <div class="col col-33 "><a href="#" ng-click="route.start()"><i class="icon ion-cash"></i><br>Financeiro</a></div>
+          <div class="col col-33 divider-left"><a href="#"><i class="icon ion-ios-calendar-outline"></i><br>Cronograma</a></div>
+          <div class="col col-33 divider-left"><a href='#' ng-click="review.init(1)"><i class="icon ion-ios-compose-outline"></i><br>Comentários</a></div>
+        </div>
+      </ion-item>
+
+      <ion-item class="item-icon-left item-text-wrap"   >
+        <i class="icon flaticon-map"></i>
+        <p>{{infos.proponent_address}}</p>
+      </ion-item>
+
+
+
+
+      <!-- <ion-item  class="item-icon-left item-icon-right item-text-wrap  item-bottom-border" >
+        <i class="icon left flaticon-logo"></i>
+        <a href="#">Mais informações do local</a>
+        <i class="icon right flaticon-arrows-5"></i>
+      </ion-item> -->
+
+
+
+      <div  class="tab-wrap" >
+
+        <!-- active tab on page load gets checked attribute -->
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+        <label for="tab1">Concedente</label>
+
+        <input type="radio" id="tab2" name="tabGroup1" class="tab" checked>
+        <label for="tab2">Proponente</label>
+
+        <input type="radio" id="tab3" name="tabGroup1" class="tab">
+        <label for="tab3">Interveniente</label>
+
+        <div class="tab__content">
+          Rampas / Guias rebaixadas / Banheiros adaptados / Espaço para movimentação de cadeira de rodas / Telefones públicos adaptados / Bebedouros adaptados / Local com boa iluminação
+
+        </div>
+
+        <div class="tab__content">
+          Rampas / Guias rebaixadas / Banheiros adaptados / Espaço para movimentação de cadeira de rodas / Telefones públicos adaptados / Bebedouros adaptados / Local com boa iluminação
+
+        </div>
+
+        <div class="tab__content">
+          <h3>Visual</h3>
+          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+        </div>
+
+      </div>
+
+
+      <ion-item class="item-divider">
+        <i class="icon flaticon-book"></i> Justificativa
+      </ion-item>
+
+      <ion-item class="item-text-wrap"   >
+
+        <p>{{infos.justification}}</p>
+      </ion-item>
+
+      <ion-item class="item-divider" ng-if="infos.warrant!==''">
+        <i class="icon ion-ios-bookmarks-outline"></i> Fundamento legal
+      </ion-item>
+
+      <ion-item class="item-text-wrap" ng-if="infos.warrant!==''">
+        <p>{{infos.warrant}}</p>
+      </ion-item>
+
+
+      <ion-list class="comment" role="list">
+        <ion-item class="item-divider">
+          Principais comentários<small><a href="#" ng-click="comments.all.init(1);">Ver todos</a></small>
+        </ion-item>
+
+        <ion-item class="row item-text-wrap item-padding-top item-bottom-border" ng-repeat="x in [0, 1, 2]" role="listitem">
+
+            <div class="col col-center col-20" role="button" title="Denunciar esse comentário" ng-click="comments.flag.init(1)">
+              <div class="row item-avatar-left" >
+                <img src="http://placehold.it/100x100" alt="">
+              </div>
+
+              <div class="row">
+                <a href="#" ><i class="ion-more"></i></a>
+              </div>
+            </div>
+
+            <div class="col col-67" ng-click="comments.flag.init(1)">
+              <h4 role="heading">Ricardo Silva <small  role="contentinfo">em 12/04/15 às 15:14</small></h4>
+              <acb-info>postado em 12/04/15 às 15:14</acb-info>
+              <p role="contentinfo">A rampa possui a inclinação adequada</p>
+
+            </div>
+
+            <div class="col col-center" role="button">
+              <i class="icon flaticon-thumb"></i>
+              <acb-info>Curtir esse comentário</acb-info>
+            </div>
+
+        </ion-item>
+
+        <ion-item class="buttons item-bottom-border">
+            <button class="button button-calm" ng-click="review.init(1)">Adicionar um comentário</button>
+        </ion-item>
+      </ion-list>
+
+
+
+
+  </ion-content>
+
+</ion-view>

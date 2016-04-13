@@ -1,0 +1,56 @@
+<ion-view class="signUp formPage" title="signUp" ng-controller="User">
+  <ion-content class="has-header">
+    <form novalidate="" class="signUpForm" id="signUpForm" name="signUpForm">
+      <ion-list>
+        <div class='ion-group'>
+          <div class="buttons fb" ng-if="!(signIn.login.facebook.isLogged())">
+            <button class="button facebook" ng-click="signIn.login.facebook.start()">Inscrever-se com o Facebook</button>
+          </div>
+
+          <ion-item class="item-avatar-left item-text-wrap" ng-if="signIn.login.facebook.isLogged()">
+            <img ng-src="{{loginInfos.photo()}}">
+            {{signUp.data.name}}, preencha os dados abaixo para concluir o seu cadastro.
+          </ion-item>
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Seu nome</span>
+              <i class="icon flaticon-black-3 placeholder-icon"></i>
+              <input type="text" required placeholder="Digite seu nome" ng-model="signUp.data.name">
+          </label>
+
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Seu email</span>
+              <i class="icon flaticon-interface-2 placeholder-icon"></i>
+              <input type="email" required placeholder="Digite seu email" ng-model="signUp.data.email">
+          </label>
+
+
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Senha</span>
+              <i class="icon flaticon-lock placeholder-icon"></i>
+              <input type="password" required placeholder="Digite sua senha" ng-model="signUp.data.password">
+          </label>
+
+
+          <label class="item item-input item-floating-label">
+              <span class="input-label">Confirme sua senha</span>
+              <i class="icon flaticon-key placeholder-icon"></i>
+              <input type="password" compare-to="signUp.data.password" required placeholder="Confirme sua senha" ng-model="signUp.data.password_confirm">
+          </label>
+
+          <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Desejo receber as novidades do Urban Maps no meu email</ion-checkbox>
+
+        </div>
+
+        <div class="buttons">
+          <button ng-class="{'button-disabled': !signUp.isValid(signUpForm)}" class="button" ng-click="signUp.save.start(signUpForm);">Inscreva-se</button>
+        </div>
+
+        <small><br>Ao inscrever-se você aceita os <b>Termos de Uso e Privacidade</b></small>
+
+      </ion-list>
+
+    </form>
+
+  </ion-content>
+</ion-view>

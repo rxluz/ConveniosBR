@@ -1,0 +1,80 @@
+<ion-scroll scroll="true" class="subheader search"  >
+    <ion-list>
+      <acb role="list" id="places_near" ng-attr-title="{{'Resultados da busca para ' + header.search.term}}" >
+        <acb-info role="heading">{{'Resultados da busca para ' + header.search.term}}</acb-info>
+
+
+        <ion-item class="item-divider" aria-hidden="true">
+          Resultados da sua busca
+        </ion-item>
+
+        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="x in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] track by $index">
+          <acb role="listitem">
+            <acb-info role="heading">Museu de Arte Moderrna de São Paulo</acb-info>
+            <acb-info role="contentinfo">Rua Coronel Mursa, 220</acb-info>
+            <acb-info role="contentinfo">Distancia até o local: 200m</acb-info>
+            <acb-info role="contentinfo">Avaliação média: 4 de 5 estrelas</acb-info>
+            <acb-info role="contentinfo">25 comentários</acb-info>
+            <acb-info role="contentinfo">Possui recursos de acessibilidade física, visual, intelectual e auditiva</acb-info>
+            <acb-info>
+              <a role="button" href="#/data/local/22">Ver mais informações do local</a>
+            </acb-info>
+
+          </acb>
+
+
+
+
+
+
+
+          <div class="col col-15 col-center" aria-hidden="true">
+            <i class="icon left flaticon-square"></i><br>
+            <p>200m</p>
+          </div>
+
+
+
+          <div class="col col-75" aria-hidden="true">
+            <p class="" >Museu de Arte Moderrna de São Paulo</p>
+
+            <div class="row" >
+              <div class="col col-40" ><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></div>
+              <div class="col col-60">
+
+                <p><a href="#">(25 comentários)</a></p></div>
+            </div>
+
+            <p>Rua Coronel Mursa, 220</p>
+            <div class="row">
+              <div class="col col-50">
+                <i class="icon flaticon-people-2" aria-hidden="true"></i>
+                <i class="icon flaticon-help" aria-hidden="true"></i>
+                <i class="icon flaticon-people-3" aria-hidden="true"></i>
+                <i class="icon flaticon-medical" aria-hidden="true"></i>
+              </div>
+
+              <div class="col col-25"></div>
+              <div class="col col-25"></div>
+            </div>
+          </div>
+
+          <div class="col col-10 col-center" aria-hidden="true">
+            <a role="button" href="#/data/local/22" title="Ver mais informações do local"><i class="icon right flaticon-arrows-5"></i></a>
+          </div>
+
+
+        </ion-item>
+
+        <ion-item class="item-button">
+          <a href="#" class="button" ui-sref="user.signup" menu-close>Adicionar novo local</a>
+        </ion-item>
+
+      </acb>
+
+
+
+
+    </ion-list>
+
+  </ion-scroll>

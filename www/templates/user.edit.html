@@ -1,0 +1,40 @@
+<ion-view class="user formPage" title="edit" ng-controller="User">
+  <ion-content class='has-header' scroll="false">
+    <div class="profile">
+      <ion-item class="item-avatar-left" href="#">
+        <img ng-src="{{loginInfos.photo()}}">
+        <b>{{userEdit.data.name}}</b><br>
+        {{userEdit.data.email}}
+      </ion-item>
+    </div>
+
+    <ion-scroll>
+      <form novalidate="" class="userEditForm" name="userEditForm" id="userEditForm">
+        <ion-list>
+          <div class='ion-group'>
+            <label class="item item-input item-floating-label">
+               <span class="input-label">Seu nome</span>
+                <i class="icon flaticon-black-3 placeholder-icon"></i>
+                <input type="text" required placeholder="Digite seu nome" ng-model="userEdit.data.name">
+            </label>
+
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Seu email</span>
+                <i class="icon flaticon-interface-2 placeholder-icon"></i>
+                <input type="text" required placeholder="Digite seu email" ng-model="userEdit.data.email">
+            </label>
+
+          </div>
+
+          <div class="buttons">
+            <button ng-class="{'button-disabled': !userEdit.isValid(userEditForm)}" class="button" ng-click="userEdit.save.start(userEditForm);">Salvar</button>
+
+          </div>
+
+        </ion-list>
+
+      </form>
+    </ion-scroll>
+
+  </ion-content>
+</ion-view>

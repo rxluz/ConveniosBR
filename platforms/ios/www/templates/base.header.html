@@ -1,0 +1,42 @@
+<section  ng-if="!header.search.isVisible && header.isVisible" >
+  <ion-header-bar ng-class="header.class" role="banner" label="Cabeçalho" title="Cabeçalho" class="bar" >
+    <div class="buttons">
+      <button tabindex=1 ng-if="header.buttons.menu"  ng-click="menu.left.show()" class="button button-icon flaticon-three def button-wave"><acb-info>Abrir o menu</acb-info></button>
+
+    </div>
+
+    <h1 class="title" lang="en">
+      {{header.title}}
+    </h1>
+
+    <div class="buttons">
+
+
+      <!-- <div class="titip-bottom-left titip-active titip-flip titip-wrapped titip-default" data-title="Digite o nome do local que você deseja procurar"> -->
+      <div class="" data-title="Digite o nome do local que você deseja procurar">
+        <button tabindex=2
+          ng-if="header.buttons.search"
+          ng-click="header.search.init(false);"
+          class="button button-right button-icon flaticon-interface "
+        >
+          <acb-info>Efetuar uma busca</acb-info>
+        </button>
+      </div>
+
+
+
+      <div class="divider-button" ng-if="header.buttons.filter">
+        <button tabindex=3
+          ng-click="header.filter.start();"
+          class="button button-icon flaticon-tool button-right def"
+          ng-class="{'filter-active':header.filter.isVisible}">
+          <acb-info>Filtrar informações</acb-info>
+        </button>
+      </div>
+
+    </div>
+
+  </ion-header-bar>
+</section>
+
+<ng-include src="'templates/base.header.search.html'"></ng-include>

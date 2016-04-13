@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="phonegap-plugin-mobile-accessibility"
+    version="1.0.4-dev">
+    <name>Mobile Accessibility</name>
+    <description>PhoneGap Mobile Accessibility Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>phonegap, mobile accessibility</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/mobile-accessibility.js" name="mobile-accessibility">
+        <clobbers target="window.MobileAccessibility" />
+    </js-module>
+
+    <js-module src="www/MobileAccessibilityNotifications.js" name="MobileAccessibilityNotifications">
+        <clobbers target="MobileAccessibilityNotifications" />
+    </js-module>
+
+   <dependency id="cordova-plugin-device" url="https://github.com/apache/cordova-plugin-device.git"  />
+   <dependency id="cordova-plugin-network-information" url="https://github.com/apache/cordova-plugin-network-information.git" />
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MobileAccessibility">
+                <param name="ios-package" value="CDVMobileAccessibility" onload="true" />
+            </feature>
+        </config-file>
+        <framework src="MediaAccessibility.framework" weak="true" />
+        <header-file src="src/ios/CDVMobileAccessibility.h" />
+        <source-file src="src/ios/CDVMobileAccessibility.m" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <!-- for some reason, these dependant feature tags, Device and NetworkStatus,
+                are not being added to the /res/xml/config.xml when the project is built,
+                so I've added them here to make sure they make it into the build -->
+            <feature name="Device">
+                <param name="android-package" value="org.apache.cordova.device.Device" />
+            </feature>
+            <feature name="NetworkStatus">
+                <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager"/>
+            </feature>
+
+            <access origin="https://ssl.gstatic.com/accessibility/javascript/android/*" />
+            <feature name="MobileAccessibility" >
+                <param name="android-package" value="com.phonegap.plugin.mobileaccessibility.MobileAccessibility"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/phonegap/plugin/mobileaccessibility/MobileAccessibility.java" target-dir="src/com/phonegap/plugin/mobileaccessibility" />
+        <source-file src="src/android/com/phonegap/plugin/mobileaccessibility/AbstractMobileAccessibilityHelper.java" target-dir="src/com/phonegap/plugin/mobileaccessibility" />
+        <source-file src="src/android/com/phonegap/plugin/mobileaccessibility/DonutMobileAccessibilityHelper.java" target-dir="src/com/phonegap/plugin/mobileaccessibility" />
+        <source-file src="src/android/com/phonegap/plugin/mobileaccessibility/IceCreamSandwichMobileAccessibilityHelper.java" target-dir="src/com/phonegap/plugin/mobileaccessibility" />
+        <source-file src="src/android/com/phonegap/plugin/mobileaccessibility/JellyBeanMobileAccessibilityHelper.java" target-dir="src/com/phonegap/plugin/mobileaccessibility" />
+        <source-file src="src/android/com/phonegap/plugin/mobileaccessibility/KitKatMobileAccessibilityHelper.java" target-dir="src/com/phonegap/plugin/mobileaccessibility" />
+        <asset src="www/android" target="plugins/com.phonegap.plugin.mobile-accessibility/android" />
+    </platform>
+
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/mobile-accessibility-proxy.js" name="MobileAccessibilityProxy">
+            <merges target="" />
+        </js-module>
+
+        <config-file target="package.phone.appxmanifest" parent="/Package/Capabilities">
+            <DeviceCapability Name="microphone" />
+        </config-file>
+
+        <config-file target="package.windows.appxmanifest" parent="/Package/Capabilities">
+            <DeviceCapability Name="microphone" />
+        </config-file>
+
+        <config-file target="package.windows80.appxmanifest" parent="/Package/Capabilities">
+            <DeviceCapability Name="microphone" />
+        </config-file>
+    </platform>
+</plugin>

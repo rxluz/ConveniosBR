@@ -1,0 +1,54 @@
+<ion-modal-view class="local" role="alertdialog" >
+  <ion-header-bar class="bar-calm">
+    <div class="buttons">
+        <button tabindex="1"
+          ng-click="comments.all.close()"
+          class="button button-icon flaticon-delete button-right def"
+          ><acb-info>Fechar a lista de comentários</acb-info></button>
+    </div>
+
+    <h1 class="title" tabindex="2">
+      Ver comentários
+    </h1>
+  </ion-header-bar>
+
+  <ion-content ng-class="[modal.close.class]" scroll="true" class="local_comments">
+    <ion-list class="comment" role="list">
+
+      <ion-item class="row item-text-wrap item-padding-top item-bottom-border" ng-repeat="x in [0, 1, 2]" role="listitem">
+
+          <div class="col col-center col-20" role="button" aria-hidden="true" ng-click="comments.flag.init(1)">
+            <div class="row item-avatar-left" aria-hidden="true">
+              <img src="http://placehold.it/100x100" alt="">
+            </div>
+
+            <div class="row">
+              <a href="#" ><i class="ion-more"></i></a>
+
+            </div>
+          </div>
+
+          <div class="col col-67" ng-click="comments.flag.init(1)">
+            <h4 role="heading">Ricardo Silva <small aria-hidden="true" role="contentinfo">em 12/04/15 às 15:14</small></h4>
+            <acb-info>postado em 12/04/15 às 15:14</acb-info>
+            <p role="contentinfo">A rampa possui a inclinação adequada</p>
+            <p aria-hidden="false"><ionic-ratings ratingsobj='ratingsObject'></ionic-ratings></p>
+          </div>
+
+          <div class="col col-center" role="button">
+            <i class="icon flaticon-thumb"></i>
+            <acb-info>Curtir esse comentário</acb-info>
+          </div>
+
+          <a role="button" href="#" ng-click="comments.flag.init(1)" class="button">Denunciar esse comentário</a>
+
+      </ion-item>
+
+      <ion-item class="buttons item-bottom-border">
+          <button class="button button-calm" ng-click="review.init(1)">Avaliar local</button><br><br>
+          <a href="#">Adicionar um comentário</a>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-modal-view>
