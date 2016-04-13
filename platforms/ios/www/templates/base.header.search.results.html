@@ -3,19 +3,18 @@
       <acb role="list" id="places_near" ng-attr-title="{{'Resultados da busca para ' + header.search.term}}" >
         <acb-info role="heading">{{'Resultados da busca para ' + header.search.term}}</acb-info>
 
-
         <ion-item class="item-divider" aria-hidden="true">
           Resultados da sua busca
         </ion-item>
 
-        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces  | orderBy:['proponent']">
+        <ion-item  class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in nearPlaces  | orderBy:['proponent']">
           <div class="col col-15 col-center" data-title="Digite o nome do local que você deseja procurar" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
             <i ng-class="home.data.getIconStatus(info.status)"></i><br>
 
           </div>
 
           <div class="col col-75">
-            <p class="">{{info.name}}</p>
+            <p class="">{{info.name  | cut:true:100:' ...'}}</p>
             <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
 
             <div class="row">

@@ -18823,11 +18823,11 @@ ion-side-menu .top, ion-side-menu .logged {
   text-align: left; }
 
 ion-side-menu .top {
-  height: 92px; }
+  height: 92px;
+  text-align: center; }
   ion-side-menu .top img {
-    height: 92%;
+    height: 95%;
     padding-bottom: 0px;
-    padding-left: 17px;
     padding-top: 20px; }
 
 ion-side-menu .buttons {
@@ -18880,6 +18880,7 @@ ion-side-menu ion-scroll {
     padding-right: 10px; }
 
 ion-view.home ion-content {
+  background-color: rgba(128, 128, 128, 0.1) !important;
   height: 100%; }
   ion-view.home ion-content .scroll {
     height: 100% !important; }
@@ -19542,7 +19543,7 @@ ion-nav-view.has-alert {
   background-color: #F8F8F8;
   text-align: center; }
   .about img {
-    max-width: 70%; }
+    max-width: 100%; }
   .about .list {
     margin-bottom: 30px !important; }
   .about ion-item {

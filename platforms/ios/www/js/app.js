@@ -1,5 +1,5 @@
 
-var app=angular.module('ionicApp', ['ionic', 'ng-mfb', '$selectBox', 'ui.utils.masks', "ngCookies", 'ngMap', 'ionic-ratings', 'ngCordova', 'ngAria'])
+var app=angular.module('ionicApp', ['ionic', 'ng-mfb', '$selectBox', 'ui.utils.masks', "ngCookies", 'ionic-ratings', 'ngCordova', 'ngAria'])
 
 .constant("FACEBOOK_APP_ID", '660552810751144')
 

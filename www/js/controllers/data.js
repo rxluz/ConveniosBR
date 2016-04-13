@@ -148,6 +148,25 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
   };
 
 
+  $scope.timeline={
+    init: function(id){
+        $rootScope.popup.content.start('templates/data.local.timeline.html', $scope);
+    }
+  };
+
+  $scope.follow={
+    init: function(id){
+      $rootScope.notification.show("Monitoramento ativado", 0);
+    }
+  };
+
+  $scope.finance={
+    init: function(id){
+        $rootScope.popup.content.start('templates/data.local.finance.html', $scope);
+    }
+  };
+
+
 
   $scope.photo={
     add: {
@@ -299,7 +318,7 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
     $rootScope.$apply(function(){
       if($ionicScrollDelegate.getScrollPosition().top>180){
         $rootScope.header.class="bar-local-scroll";
-        $rootScope.header.title="Museu de Arte Moderna de São Paulo";
+        $rootScope.header.title=$scope.infos.name;
       }else{
         $rootScope.header.class="bar-local";
         $rootScope.header.title="";
@@ -318,6 +337,7 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
   };
 
 
+
   $scope.getInfos=function(id){
     for(var x in $rootScope.nearPlaces){
       if($rootScope.nearPlaces[x].id==id){
@@ -329,6 +349,67 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
   };
 
 
+  angular.element(document).ready(function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      animationEnabled: true,
+      title:{
+        text: "Cronograma de gastos",
+        verticalAlign: "bottom", // "top", "center", "bottom"
+        horizontalAlign: "left" // "left", "right", "center"
+      },
+
+      backgroundColor: "lightgray",
+
+      data: [
+        {
+        type: "spline",
+        showInLegend: false,
+        dataPoints: [
+          { label: "Jan/15", y: 21 },
+          { label: "Fev/15", y: 44},
+          { label: "Mar/15", y: 35 },
+          { label: "Abr/15", y: 45 },
+          { label: "Mai/15", y: 75 },
+          { label: "Jun/15", y: 58 },
+          { label: "Jul/15", y: 18 },
+          { label: "Ago/15", y: 30 },
+          { label: "Set/15", y: 11}
+        ]
+        }
+      ]
+    });
+
+    chart.render();
+
+
+    var chartProp = new CanvasJS.Chart("chartPropContainer",
+    {
+      animationEnabled: true,
+      title:{
+        text: "Convênios desse proponente",
+        verticalAlign: "bottom", // "top", "center", "bottom"
+        horizontalAlign: "left" // "left", "right", "center"
+      },
+
+      backgroundColor: "lightgray",
+
+      data: [
+        {
+        type: "column",
+        showInLegend: false,
+        dataPoints: [
+          { label: "2013", y: 21 },
+          { label: "2014", y: 44},
+          { label: "2015", y: 35 },
+          { label: "2016", y: 45 }
+        ]
+        }
+      ]
+    });
+
+    chartProp.render();
+  });
 
 
 //console.log($state.params);
@@ -352,4 +433,6 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
       break;
     }
   };
+
+
 });

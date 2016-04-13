@@ -19558,10 +19558,11 @@ ion-nav-view.has-alert {
   .performerAdd .scroll {
     padding: 25px; }
 
-.slider-popup ion-slide {
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important; }
+.tab-wrap a {
+  color: #595959; }
+
+.slider-slides {
+  background-color: lightgray !important; }
 
 .before-bar-local-scroll {
   position: absolute;
@@ -19626,7 +19627,7 @@ ion-nav-view.has-alert {
   .local ion-content .slider .slider-slide {
     background-size: cover;
     background-position: center;
-    background-color: #F6FAFB;
+    background-color: lightgray;
     position: relative;
     text-align: center; }
     .local ion-content .slider .slider-slide a {
@@ -19656,6 +19657,7 @@ ion-nav-view.has-alert {
       position: relative; }
   .local ion-content .local-header {
     background-color: #597B80 !important;
+    top: -10px;
     padding: 0px !important; }
     .local ion-content .local-header h3 {
       width: calc(100% - 90px);

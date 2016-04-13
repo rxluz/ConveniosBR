@@ -1,11 +1,19 @@
 .slider-popup{
+
   ion-slide{
-    background-size: contain !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
+
   }
 }
 
+.tab-wrap{
+  a{
+    color: #595959;
+  }
+}
+.slider-slides{
+  background-color: lightgray !important;
+
+}
 .before-bar-local-scroll{
   position: absolute;
   width: 100%;
@@ -53,7 +61,7 @@
       .slider-slide{
         background-size: cover;
         background-position: center;
-        background-color: #F6FAFB;
+        background-color: lightgray;
         position: relative;
         text-align: center;
 
@@ -95,6 +103,7 @@
 
     .local-header{
       background-color: #597B80 !important;
+      top: -10px;
       padding: 0px !important;
       h3{
         width: calc(100% - 90px);

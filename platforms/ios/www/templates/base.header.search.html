@@ -40,69 +40,30 @@
 
 
     <acb role="list"  id="places_near" title="Lista de Lugares salvos" >
-      <acb-info role="heading">Lista de lugares salvos</acb-info>
+      <acb-info role="heading">Últimas pesquisas realizadas</acb-info>
 
       <ion-list>
         <ion-item class="item-divider" aria-hidden="true">
-          Convênios próximos a você
+          Últimas pesquisas realizadas
         </ion-item>
 
 
-        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces | limitTo: 2 | orderBy:['justification']">
+        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in nearPlaces | limitTo: 10 | orderBy:['grantor']">
 
-          <div class="col col-15 col-center" data-title="{{info.status_tip}}" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
-            <i ng-class="home.data.getIconStatus(info.status)"></i><br>
+          <div class="col col-15 col-center">
+            <i class="icon flaticon-arrows-4"></i><br>
           </div>
 
           <div class="col col-75">
-            <p class="">{{info.name}}</p>
-            <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
-
+            <p class="">{{info.name | cut:true:40:' ...'}}</p>
           </div>
 
           <div class="col col-10 col-center" on-touch="go('/data/local/'+info.id)">
             <i class="icon right flaticon-arrows-5"></i>
           </div>
         </ion-item>
-
-
-        <ion-item>
-          <a href="#" role="button" ui-sref="user.places"><i class="icon flaticon-round"></i>Mais convênios próximos</a>
-        </ion-item>
       </ion-list>
     </acb>
-
-
-    <acb role="list"  id="places_near" title="Lista de Lugares próximos" >
-      <acb-info role="heading">Lista de lugares próximos</acb-info>
-      <ion-list>
-        <ion-item class="item-divider" aria-hidden="true">
-          Convênios monitorados
-        </ion-item>
-
-        <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces | limitTo: 2 | orderBy:['proponent']">
-          <div class="col col-15 col-center" data-title="{{info.status_tip}}" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
-            <i ng-class="home.data.getIconStatus(info.status)"></i><br>
-          </div>
-
-
-          <div class="col col-75">
-            <p class="">{{info.name}}</p>
-            <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
-
-          </div>
-
-          <div class="col col-10 col-center" on-touch="go('/data/local/'+info.id)">
-            <i class="icon right flaticon-arrows-5"></i>
-          </div>
-        </ion-item>
-
-        <ion-item>
-          <a href="#" role="button" ui-sref="user.places"><i class="icon flaticon-round"></i>Mais convênios monitorados</a>
-        </ion-item>
-      </ion-list>
-    </acb>
-
 
     </ion-scroll>
 

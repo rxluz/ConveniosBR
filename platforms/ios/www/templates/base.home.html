@@ -1,7 +1,7 @@
 <div class="bar bar-subheader bar-tips" ng-if="header.search.isVisible">
 </div>
 
-<ion-view class="home" title="Home"  >
+<ion-view class="home" title="Home" ng-controller="Data" >
     <ion-content scroll="false">
 
     <div aria-hidden="true" >
@@ -14,13 +14,13 @@
                   Convênios próximos a sua localização
                 </ion-item>
 
-                <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces  | orderBy:['id']">
+                <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in nearPlaces  | orderBy:['id']">
                   <div class="col col-15 col-center" data-title="{{info.status_tip}}" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
                     <i ng-class="home.data.getIconStatus(info.status)"></i><br>
                   </div>
 
                   <div class="col col-75">
-                    <p class="">{{info.name}}</p>
+                    <p class="">{{info.name  | cut:true:100:' ...'}}</p>
                     <label  ><i class="icon ion-pin"></i>{{info.proponent}}</label>
 
                     <div class="row">
@@ -48,18 +48,18 @@
                 </ion-item>
 
 
-                <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in home.data.nearPlaces  | orderBy:['name']">
+                <ion-item class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in nearPlaces  | orderBy:['name']">
                   <div class="col col-15 col-center" data-title="{{info.status_tip}}" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
                     <i ng-class="home.data.getIconStatus(info.status)"></i><br>
                   </div>
 
                   <div class="col col-75">
-                    <p class="">{{info.name}}</p>
+                    <p class="">{{info.name  | cut:true:100:' ...'}}</p>
                     <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
 
                     <div class="row">
-                      <div class="col col-40"><ionic-ratings ratingsobj='timeObject'></ionic-ratings>
-                      <ionic-ratings ratingsobj='moneyObject'><br></ionic-ratings>
+                      <div class="col col-40"><ionic-ratings ratingsobj='timeObject'></ionic-ratings><br>
+                      <ionic-ratings ratingsobj='moneyObject'></ionic-ratings>
                       </div>
                       <div class="col col-60 col-center"><p><a href="#">25 comentários</a></p></div>
                     </div>
