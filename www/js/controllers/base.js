@@ -7,7 +7,7 @@ app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
 
   $rootScope.route = {
     start: function(){
-
+ 
       $ionicSideMenuDelegate.toggleLeft(false);
       $rootScope.menu.bottom.status="closed";
       $rootScope.header.buttons.bottom=false;

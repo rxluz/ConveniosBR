@@ -156,7 +156,33 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
 
   $scope.follow={
     init: function(id){
-      $rootScope.notification.show("Monitoramento ativado", 0);
+      //$rootScope.notification.show("Monitoramento ativado", 0);
+      $rootScope.menu.footer.show([
+        {
+          icon: "icon ion-flag",
+          name: "Denunciar esse convênio",
+          action: function(){
+            //console.log('ila');
+            //console.log($rootScope);
+            //alert('ola mundo');
+            var options = {
+                 location: 'yes',
+                 clearcache: 'yes',
+                 toolbar: 'yes'
+               };
+            $cordovaInAppBrowser.open('https://google.com.br', '_blank', options)
+            .then(function(event) {
+              // success
+            })
+            .catch(function(event) {
+              // error
+            });
+
+          }
+        }
+      ]);
+
+
     }
   };
 
@@ -166,152 +192,6 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
     }
   };
 
-
-
-  $scope.photo={
-    add: {
-      init: function(id, popupIsOpen){
-        $scope.photo.add.clear(id);
-
-
-
-        $rootScope.menu.footer.show([
-          {
-            icon: "icon flaticon-camera",
-            name: "Tirar uma foto",
-            action: function(){
-              $scope.photo.add.take(id);
-
-            }
-          },
-          {
-            icon: "icon flaticon-square",
-            name: "Foto da biblioteca",
-            action: function(){
-              $scope.photo.add.choose(id);
-            }
-          }
-        ]);
-      },
-
-      clear: function(id){
-        //essa função limpa a lista de fotos toda a vez que o usuário muda de local, impedindo que fotos que foram adicionadas anteriormente sejam vistas na adição de um novo local
-        if($scope.photo.add.id!=id){
-          $scope.photo.add.id=id;
-          $scope.photo.add.list=[];
-        }
-      },
-
-      id: false,
-
-      take: function(id){
-        var options = {
-         quality: 75,
-         destinationType: Camera.DestinationType.DATA_URL,
-         sourceType: Camera.PictureSourceType.CAMERA,
-         allowEdit: true,
-         encodingType: Camera.EncodingType.JPEG,
-         targetWidth: 300,
-         targetHeight: 300,
-         popoverOptions: CameraPopoverOptions,
-         saveToPhotoAlbum: false
-        };
-
-         $cordovaCamera.getPicture(options).then(function (imageData) {
-             //$scope.imgURI = "data:image/jpeg;base64," + imageData;
-             $scope.photo.add.popup.start(1, imageData);
-         }, function (err) {
-             // An error occured. Show a message to the user
-         });
-      },
-
-      choose: function(id){
-        var options = {
-         quality: 75,
-         destinationType: Camera.DestinationType.DATA_URL,
-         sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-         allowEdit: true,
-         encodingType: Camera.EncodingType.JPEG,
-         targetWidth: 300,
-         targetHeight: 300,
-         popoverOptions: CameraPopoverOptions,
-         saveToPhotoAlbum: false,
-         limit: 10
-        };
-
-         $cordovaCamera.getPicture(options).then(function (imageData) {
-             $scope.imgURI = "data:image/jpeg;base64," + imageData;
-             $scope.photo.add.popup.start(1, imageData);
-         }, function (err) {
-             // An error occured. Show a message to the user
-         });
-      },
-
-      popup: {
-        start: function(id, imageData){
-          $scope.photo.add.list.push("data:image/jpeg;base64,"+imageData);
-          //console.log($scope.photo.add.list);
-
-          if(!$scope.photo.add.popup.isOpen){
-            $rootScope.popup.content.start('templates/data.local.photo.list.html', $scope);
-            $scope.photo.add.popup.isOpen=true;
-          }
-
-        },
-
-        isOpen: false,
-
-        close: function(){
-          $scope.photo.add.popup.isOpen=false;
-          $rootScope.modal.close.start();
-        }
-      },
-
-      list: [],
-
-      delete: {
-        start: function($index){
-          //console.log($index+"oi");
-          $scope.photo.add.delete.id=$index;
-          $timeout(function(){
-            $scope.photo.add.list.splice($index);
-            $scope.photo.add.delete.id=false;
-          }, 600);
-
-        },
-
-        class: function($index){
-
-          if($index===$scope.photo.add.delete.id){
-            return ['delete'];
-          }else{
-            return [];
-          }
-
-        },
-
-        id: false
-      }
-
-    },
-
-    fullScreen: {
-      init: function(){
-
-        $rootScope.sliderStyle={
-          height: (window.screen.height-200)+"px"
-        };
-
-        $rootScope.popup.alert.show(
-          'Galeria de fotos', {
-            url: "templates/data.local.photo.full.html"
-          },
-          function(){}
-        );
-
-      }
-    }
-  };
 
   $scope.scrollData=function(){
     //scrollInfos.init()
@@ -348,68 +228,78 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
 
   };
 
+  $scope.chartCreated=false;
 
-  angular.element(document).ready(function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-      animationEnabled: true,
-      title:{
-        text: "Cronograma de gastos",
-        verticalAlign: "bottom", // "top", "center", "bottom"
-        horizontalAlign: "left" // "left", "right", "center"
-      },
+  $scope.chart=function(id){
+    //console.log(id);
+    //console.log("chartContainer"+id);
+    angular.element(document).ready(function () {
 
-      backgroundColor: "lightgray",
 
-      data: [
-        {
-        type: "spline",
-        showInLegend: false,
-        dataPoints: [
-          { label: "Jan/15", y: 21 },
-          { label: "Fev/15", y: 44},
-          { label: "Mar/15", y: 35 },
-          { label: "Abr/15", y: 45 },
-          { label: "Mai/15", y: 75 },
-          { label: "Jun/15", y: 58 },
-          { label: "Jul/15", y: 18 },
-          { label: "Ago/15", y: 30 },
-          { label: "Set/15", y: 11}
+
+      $scope.chartCreated=true;
+      chartTimeline = new CanvasJS.Chart("chartContainer",
+      {
+        animationEnabled: true,
+        title:{
+          text: "Cronograma de gastos",
+          verticalAlign: "bottom", // "top", "center", "bottom"
+          horizontalAlign: "left" // "left", "right", "center"
+        },
+
+        backgroundColor: "lightgray",
+
+        data: [
+          {
+          type: "spline",
+          showInLegend: false,
+          dataPoints: [
+            { label: "Jan/15", y: 21 },
+            { label: "Fev/15", y: 44},
+            { label: "Mar/15", y: 35 },
+            { label: "Abr/15", y: 45 },
+            { label: "Mai/15", y: 75 },
+            { label: "Jun/15", y: 58 },
+            { label: "Jul/15", y: 18 },
+            { label: "Ago/15", y: 30 },
+            { label: "Set/15", y: 11}
+          ]
+          }
         ]
-        }
-      ]
+      });
+
+      chartTimeline.render();
+
+
+      chartProp = new CanvasJS.Chart("chartPropContainer",
+      {
+        animationEnabled: true,
+        title:{
+          text: "Convênios desse proponente",
+          verticalAlign: "bottom", // "top", "center", "bottom"
+          horizontalAlign: "left" // "left", "right", "center"
+        },
+
+        backgroundColor: "lightgray",
+
+        data: [
+          {
+          type: "column",
+          showInLegend: false,
+          dataPoints: [
+            { label: "2013", y: 21 },
+            { label: "2014", y: 44},
+            { label: "2015", y: 35 },
+            { label: "2016", y: 45 }
+          ]
+          }
+        ]
+      });
+
+      chartProp.render();
     });
 
-    chart.render();
-
-
-    var chartProp = new CanvasJS.Chart("chartPropContainer",
-    {
-      animationEnabled: true,
-      title:{
-        text: "Convênios desse proponente",
-        verticalAlign: "bottom", // "top", "center", "bottom"
-        horizontalAlign: "left" // "left", "right", "center"
-      },
-
-      backgroundColor: "lightgray",
-
-      data: [
-        {
-        type: "column",
-        showInLegend: false,
-        dataPoints: [
-          { label: "2013", y: 21 },
-          { label: "2014", y: 44},
-          { label: "2015", y: 35 },
-          { label: "2016", y: 45 }
-        ]
-        }
-      ]
-    });
-
-    chartProp.render();
-  });
+  };
 
 
 //console.log($state.params);
@@ -429,6 +319,7 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
         });
 
         $scope.getInfos($state.params.id);
+        $scope.chart($state.params.id);
 
       break;
     }

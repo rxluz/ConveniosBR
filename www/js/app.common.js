@@ -496,7 +496,7 @@ app.run(function($rootScope, $ionicBackdrop, $ionicSideMenuDelegate, $window, $s
       isVisible: function(){
         //console.log();
 
-        if($rootScope.header.buttons.bottom===true && $rootScope.menu.left.isVisible()===false && $rootScope.notification.display===false && $rootScope.header.search.isVisible===false && $ionicTabsDelegate.selectedIndex()===0){
+        if($rootScope.header.buttons.bottom===true && $rootScope.menu.left.isVisible()===false && $rootScope.notification.display===false && $rootScope.header.search.isVisible===false){
           return true;
         }
 

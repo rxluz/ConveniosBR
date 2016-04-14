@@ -156,7 +156,7 @@ app.controller('Others', function($scope, $ionicSideMenuDelegate, $rootScope, $i
           menu: false,
           search: false,
           bottom: false,
-          title: "Sobre o Urban Maps",
+          title: "Sobre o ConvêniosBR",
           class: "bar-balanced"
         });
       break;
@@ -177,18 +177,6 @@ app.controller('Others', function($scope, $ionicSideMenuDelegate, $rootScope, $i
       break;
 
 
-      case 'others.magazine':
-        $rootScope.header.config({
-          visible: true,
-          back: true,
-          filter: false,
-          menu: false,
-          search: false,
-          bottom: true,
-          title: "Ler revista",
-          class: "bar-calm"
-        });
-      break;
 
       case 'others.feedback':
         $rootScope.header.config({

@@ -153,11 +153,16 @@
   color: #595959;
 }
 
+.finance{
+  color: #595959 !important;
+}
+
+
 .timeline-body > p,
 .timeline-body > small,
 .timeline-body > ul {
     margin-bottom: 0;
-    color: #595959;
+    color: #595959 !important;
 }
 
     .timeline-body > p + p {
