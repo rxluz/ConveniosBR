@@ -23,7 +23,7 @@
 
 O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/ConveniosBR/blob/master/LICENSE.md) que visa criar uma solução compatível com as plataformas [iOS](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) e [Android](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) para monitorar os convênios firmados pelo governo federal, através dela o usuário pode:
 
- * Listar os convênios existentes na sua localidade (estado, municipio, região)
+ * Listar os convênios existentes na sua localidade (região, estado, municipio)
  * Ver informações especificas de um determinado convênio
  * Monitorar um convênio e receber atualizações de status
  * Denunciar irregularidades em um determinado convênio a partir da plataforma [e-OUV](https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx).
@@ -70,12 +70,12 @@ O projeto detecta automaticamente quando o usuário possui um recurso de acessib
 
 ## Executando a versão para Android
 
-Dentro do projeto existe na pasta  `platforms/android/build/outputs/apk` os executáveis para que o projeto possa ser visualizado no Android.
+Dentro do projeto existe na pasta  [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) os executáveis para que o projeto possa ser visualizado no Android.
 
 
 ## Executando a versão para iOS
 
-Dentro do projeto existe na pasta  `platforms/ios/` existe o arquivo `ConveniosBR.xcodeproj`, como ele é possível abrir o projeto dentro do Xcode e executar em qualquer dispositivo ou simulador iOS.
+Dentro do projeto existe na pasta  [`platforms/ios/`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) existe o arquivo `ConveniosBR.xcodeproj`, como ele é possível abrir o projeto dentro do Xcode e executar em qualquer dispositivo ou simulador iOS.
 
 ## Desenvolvimento
 
