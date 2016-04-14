@@ -107,7 +107,7 @@ A partir do Ionic é gerado um código nativo para a plataforma Android e iOS.
 
 # Interfaces do projeto
 -------------------------------------
-**Os screenshots abaixo não contém informações reais, servindo apenas como referência estrural do projeto**
+**Os screenshots abaixo não contém informações reais, servindo apenas como referência de layout e UX do projeto**
 
 ## Ícone e apresentação
 <img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2662_1024.jpg" style="float: left !important;" width=50%></img>
