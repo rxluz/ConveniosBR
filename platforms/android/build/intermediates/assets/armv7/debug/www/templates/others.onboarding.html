@@ -1,0 +1,38 @@
+<ion-view class="onboarding {{onboarding.state.name}}" title="onboarding"  >
+  <ion-content scroll="false" aria-hidden="true">
+    <ion-slide-box ng-style="{'height': windowInfo.height+'px'}"
+     on-slide-changed="onboarding.state.change($index)">
+      <ion-slide  aria-hidden="true">
+
+      </ion-slide>
+      <ion-slide aria-hidden="true">
+
+      </ion-slide>
+      <ion-slide >
+        <br><br><br>
+        <div role="application" title="Inscreva-se no Urban Maps e salve suas rotas acessíveis">
+          <a href="#" class="button" ui-sref="user.signin">Login</a>
+          <a href="#" class="button" ui-sref="user.signup">Inscreva-se</a>
+        </div>
+      </ion-slide>
+    </ion-slide-box>
+
+
+  </ion-content>
+
+
+
+  <div class="bar bar-footer" >
+
+    <div class="title" tabindex="0" role="button" title="Bem vindo ao Urban Maps, crie rotas acessíveis para o local que você deseja visitar, avalie a acessibilidade dos locais que você frequenta" ui-sref="base.home" >
+      Ir para aplicativo <i aria-hidden="true" class="flaticon-arrows-5"></i>
+    </div>
+
+  </div>
+
+  <div class="buttons-aria" tabindex="1" role="region" aria-hidden="false" title="Inscreva-se no Urban Maps e salve suas rotas acessíveis">
+    <a href="#" tabindex="1" class="button" ui-sref="user.signin">Login</a>
+    <a href="#" tabindex="2" class="button" ui-sref="user.signup">Inscreva-se</a>
+  </div>
+
+</ion-view>

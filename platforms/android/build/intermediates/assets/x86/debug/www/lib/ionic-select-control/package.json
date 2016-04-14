@@ -1,0 +1,37 @@
+{
+  "name": "ionic-select-control",
+  "version": "1.5.2",
+  "description": "Skinnable select control for Ionic framework",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSAMES/ionic-Select-Control.git"
+  },
+  "keywords": [
+    "ionic-select-control",
+    "ionic",
+    "select control for ionic"
+  ],
+  "author": {
+    "name": "OSAMES",
+    "url": "https://github.com/OSAMES/ionic-Select-Control"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OSAMES/ionic-Select-Control/issues"
+  },
+  "homepage": "https://github.com/OSAMES/ionic-Select-Control#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.1"
+  }
+}

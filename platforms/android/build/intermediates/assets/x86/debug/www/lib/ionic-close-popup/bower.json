@@ -1,0 +1,23 @@
+{
+  "name": "ionic-close-popup",
+  "version": "0.0.1",
+  "authors": [
+    "mvidailhet <mvidailhet@gmail.com>"
+  ],
+  "description": "Close Ionic popup when tapping outside it's bounds",
+  "main": "ionic-close-popup.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "ionic", "popup"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

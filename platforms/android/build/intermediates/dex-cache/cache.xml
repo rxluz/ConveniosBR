@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e5f32fa48a3eb2de0c987025c11b6e3864b634d9">
+        <dex dex="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/pre-dexed/armv7/debug/com.android.support-support-v4-23.2.0_ec82f4bdd0ce6d5a357dc03f5d3aa5e9701af20a.jar" />
+    </item>
+    <item
+        jar="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="93c02a576473bbfebd6bf93e53b152f8e8e1a2f6">
+        <dex dex="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/pre-dexed/armv7/debug/org.xwalk-xwalk_core_library-17.46.448.10_3dd5c83961a4feed1b3080ccbcfd59b23cfab15d.jar" />
+    </item>
+    <item
+        jar="/Users/appock/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.0/support-annotations-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c5bf571bb10462bd90e5419ade67793f71acbc87">
+        <dex dex="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/pre-dexed/armv7/debug/support-annotations-23.2.0_5193209dd4b925cb1aa4336ae01fb56bb970cb79.jar" />
+    </item>
+    <item
+        jar="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/android/CordovaLib/unspecified/debug/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e8353e2309e3717232d886cf4eb5109685d7c1af">
+        <dex dex="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/pre-dexed/armv7/debug/CordovaLib-unspecified-debug_863b859debd8dd02550cb90a57e3b8f4160a471b.jar" />
+    </item>
+    <item
+        jar="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.0/jars/libs/internal_impl-23.2.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e239441500605809818997dd63b62a947195f8c">
+        <dex dex="/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/pre-dexed/armv7/debug/internal_impl-23.2.0_bd7ad752e9871229305297dc82f9815647bcf597.jar" />
+    </item>
+
+</items>

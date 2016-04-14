@@ -1,0 +1,39 @@
+<ion-scroll scroll="true" class="subheader search"  >
+    <ion-list>
+      <acb role="list" id="places_near" ng-attr-title="{{'Resultados da busca para ' + header.search.term}}" >
+        <acb-info role="heading">{{'Resultados da busca para ' + header.search.term}}</acb-info>
+
+        <ion-item class="item-divider" aria-hidden="true">
+          Resultados da sua busca
+        </ion-item>
+
+        <ion-item  class="row item item-bottom-border item-text-wrap item-padding-top" ng-repeat="info in nearPlaces  | orderBy:['proponent']">
+          <div class="col col-15 col-center" data-title="Digite o nome do local que você deseja procurar" ng-class="home.data.getIconTip()"  ng-click="home.data.getIconStatus(info.status, true)">
+            <i ng-class="home.data.getIconStatus(info.status)"></i><br>
+
+          </div>
+
+          <div class="col col-75">
+            <p class="">{{info.name  | cut:true:100:' ...'}}</p>
+            <label><i class="icon ion-pin"></i>{{info.proponent}}</label>
+
+            <div class="row">
+              <div class="col col-40"><ionic-ratings ratingsobj='timeObject'></ionic-ratings>
+              <ionic-ratings ratingsobj='moneyObject'><br></ionic-ratings>
+              </div>
+              <div class="col col-60 col-center"><p><a href="#">25 comentários</a></p></div>
+            </div>
+
+          </div>
+
+          <div class="col col-10 col-center" on-touch="go('/data/local/'+info.id)">
+            <i class="icon right flaticon-arrows-5"></i>
+          </div>
+        </ion-item>
+
+
+
+
+    </ion-list>
+
+  </ion-scroll>

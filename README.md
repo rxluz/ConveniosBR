@@ -360,3 +360,60 @@ Os seguintes itens já tiveram o seu desenvolvimento concluído:
     <td>Alta</td>
   </tr>
 </table>
+
+
+## Bugs conhecidos
+
+<table>
+  <tr>
+    <td>id</td>
+    <td>nome</td>
+    <td>prioridade</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Ao clicar em um botão o botão pode ficar invisível</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>O teclado não é exibido quando a busca é exibida ou permanece ligado apos a busca ser finalizada</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>O menu de opções rápidas aparece em interfaces internas</td>
+    <td>Média</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Ao clicar em um convênio as vezes o mesmo não é carregado</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Os gráficos não são exibidos quando se aciona um segundo convênio (é necessário fechar o aplicativo e abrir novamente)</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>O titulo de algumas interfaces aparece descentralizado</td>
+    <td>Média</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>As opções de login e inscreva-se aparecem na tela de apresentação mesmo que o usuário esteja logado</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Ao clicar em compartilhar a tela de compartilhamento as vezes aparece duplicada</td>
+    <td>Alta</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>O botão curtir aparece ativado para todos os comentários</td>
+    <td>Alta</td>
+  </tr>
+ </table>

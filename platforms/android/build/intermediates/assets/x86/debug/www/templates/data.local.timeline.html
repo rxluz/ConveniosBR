@@ -1,0 +1,37 @@
+<ion-modal-view class="local" role="alertdialog" >
+  <ion-header-bar class="bar-calm">
+    <div class="buttons">
+        <button tabindex="1"
+          ng-click="comments.all.close()"
+          class="button button-icon flaticon-delete button-right def"
+          ><acb-info>Fechar o cronograma</acb-info></button>
+    </div>
+
+    <h1 class="title" tabindex="2">
+      Cronograma desse projeto
+    </h1>
+  </ion-header-bar>
+
+  <ion-content ng-class="[modal.close.class]" scroll="true" class="local_comments">
+    <ul class="timeline">
+      <li ng-repeat="l in [0, 1, 2, 3, 4, 5, 6]">
+        <div class="timeline-badge info"><i class="icon ion-calendar"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title">Meta {{l}}:</h4>
+            <p><small class="text-muted"><i class="icon ion-clock"></i> De 21/12/2015 à
+21/12/2015 </small></p>
+          </div>
+          <div class="timeline-body">
+            <p> Recondicionar equipamentos eletroeletrônicos e descartar inservíveis.</p>
+            <p> <i class="icon ion-archive"></i>Unidade de medida: Mês.</p>
+            <p> <i class="icon ion-link"></i>Quantidade: 2.300</p>
+          </div>
+        </div>
+      </li>
+
+
+  </ul>
+
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,93 @@
+<ion-modal-view class="local finance" role="alertdialog" >
+  <ion-header-bar class="bar-calm">
+    <div class="buttons">
+        <button tabindex="1"
+          ng-click="comments.all.close()"
+          class="button button-icon flaticon-delete button-right def"
+          ><acb-info>Fechar o cronograma</acb-info></button>
+    </div>
+
+    <h1 class="title" tabindex="2">
+      Financeiro
+    </h1>
+  </ion-header-bar>
+
+  <ion-content ng-class="[modal.close.class]" scroll="true" class="local_comments finance">
+    <div class="resume">
+      <div class="row">
+        <div class="col ">
+          <p class="title">Valor Global</p>
+          <p>R$ 1.200.000,00</p>
+        </div>
+        <div class="col ">
+          <p class="title">VALOR DA CONTRAPARTIDA:</p>
+          <p>R$ 0,00</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ">
+          <p class="title">VALOR DOS REPASSES:</p>
+          <p>2015: R$ 599.896,00</p>
+          <p>2016: R$ 600.104,00</p>
+        </div>
+        <div class="col ">
+          <p class="title">VALOR DA CONTRAPARTIDA FINANCEIRA:</p>
+          <p>R$ 0,00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col ">
+          <p class="title">VALOR DA CONTRAPARTIDA EM BENS E SERVIÇOS:</p>
+          <p>R$ 0,00</p>
+        </div>
+        <div class="col ">
+          <p class="title">VALOR DA RENDIMENTOS DE APLICAÇÃO:</p>
+          <p>R$ 0,00</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col ">
+          <p class="title">INÍCIO DE VIGÊNCIA:</p>
+          <p>21/12/2015</p>
+        </div>
+        <div class="col ">
+          <p class="title">FIM DE VIGÊNCIA:</p>
+          <p>21/12/2017</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <p class="title">VIGÊNCIA DO CONVÊNIO:</p>
+          <p>2017</p>
+          
+        </div>
+      </div>
+    </div>
+    <ul class="timeline">
+      <li ng-repeat="l in [0, 1, 2, 3, 4, 5, 6]">
+        <div class="timeline-badge warning"><i class="icon ion-cash"></i></div>
+        <div class="timeline-panel">
+          <div class="timeline-heading">
+            <h4 class="timeline-title"><i class="icon ion-calendar"></i>&nbsp; Dezembro/2015:</h4>
+            <!-- <p><small class="text-muted"><i class="icon ion-clock"></i> De 21/12/2015 à
+21/12/2015 </small></p> -->
+          </div>
+          <div class="timeline-body">
+            <p>META No: 1</p>
+            <p>Meta 1 - Recondicionar equipamentos eletroeletrônicos e descartar inservíveis</p>
+            <p><i class="icon ion-social-usd"></i><i class="icon ion-social-usd"></i>&nbsp;R$ 27.600,00</p>
+
+
+          </div>
+        </div>
+      </li>
+
+
+  </ul>
+
+  </ion-content>
+</ion-modal-view>

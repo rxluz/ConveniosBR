@@ -1,0 +1,107 @@
+<ion-modal-view class="formPage filter filter-advanced" ng-class="modal.close.class+'-full'">
+  <ion-header-bar>
+    <div class="buttons">
+        <button
+          ng-click="header.filter.advanced.close(modal)"
+          class="button button-icon flaticon-arrows button-right def"
+          ></button>
+    </div>
+
+    <h1 class="title">
+      Filtros
+    </h1>
+
+    <div class="buttons">
+      <button
+        class="button button-icon flaticon-tool "
+        ></button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content ng-class="[modal.close.class]">
+    <form novalidate="" class="filterForm" id="filterForm">
+
+      <ion-list>
+
+        <div class="buttons divider">
+          <div class="text text-big text-filter">Toque no item para expandir</div>
+        </div>
+        <br>
+
+        <ion-list>
+          <ion-item ng-click="header.filter.advanced.data.fisico=!header.filter.advanced.data.fisico;" class="item-icon-left item-icon-right">
+            <i class="icon flaticon-people-2"></i>
+            Físico
+            <i ng-class="{'flaticon-arrows-1': !header.filter.advanced.data.fisico, 'flaticon-arrows-2': header.filter.advanced.data.fisico}" class="icon  icon-small"></i>
+          </ion-item>
+
+          <ion-list ng-if="header.filter.advanced.data.fisico==true">
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Rampas</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Guia rebaixadas</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Banheiros adaptados</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Local com boa iluminação</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Bebedouros adaptados</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Telefones públicos adaptados</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Espaço para movimentação de cadeiras de rodas</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Elevadores ou plataformas elevatórias</ion-checkbox>
+          </ion-list>
+
+
+
+
+
+
+
+
+          <ion-item ng-click="header.filter.advanced.data.visual=!header.filter.advanced.data.visual;" class="item-icon-left item-icon-right">
+            <i class="icon flaticon-help"></i>
+            Visual
+            <i ng-class="{'flaticon-arrows-1': !header.filter.advanced.data.visual, 'flaticon-arrows-2': header.filter.advanced.data.visual}" class="icon  icon-small"></i>
+          </ion-item>
+
+
+            <ion-list ng-if="header.filter.advanced.data.visual==true">
+              <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Piso direcional</ion-checkbox>
+              <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Piso tátil</ion-checkbox>
+              <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Semáforo sonoro</ion-checkbox>
+              <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Placas de identificação em braile</ion-checkbox>
+            </ion-list>
+
+            <ion-item ng-click="header.filter.advanced.data.auditiva=!header.filter.advanced.data.auditiva;" class="item-icon-left item-icon-right">
+              <i class="icon flaticon-medical"></i>
+              Auditiva
+              <i ng-class="{'flaticon-arrows-1': !header.filter.advanced.data.auditiva, 'flaticon-arrows-2': header.filter.advanced.data.auditiva}" class="icon  icon-small"></i>
+            </ion-item>
+
+
+            <ion-list ng-if="header.filter.advanced.data.auditiva==true">
+              <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Interprete de libras</ion-checkbox>
+              <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Audio descrição</ion-checkbox>
+            </ion-list>
+
+          <ion-item ng-click="header.filter.advanced.data.intelectual=!header.filter.advanced.data.intelectual;" class="item-icon-left item-icon-right">
+            <i class="icon flaticon-people-3"></i>
+            Intelectual
+            <i ng-class="{'flaticon-arrows-1': !header.filter.advanced.data.intelectual, 'flaticon-arrows-2': header.filter.advanced.data.intelectual}" class="icon  icon-small"></i>
+          </ion-item>
+
+          <ion-list ng-if="header.filter.advanced.data.intelectual==true">
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Instrutores</ion-checkbox>
+            <ion-checkbox class="item-text-wrap" ng-model="filter.blue">Tutores</ion-checkbox>
+          </ion-list>
+
+        </ion-list>
+
+
+
+        <div class="buttons">
+          <button ng-class="{'button-disabled': !header.filter.isValid(filterForm)}" ng-click="header.filter.save.start(filterForm, modal)" class="button">Filtrar mapa</button><br><br>
+          <a href="#" ng-click="header.filter.start();">Filtros simples</a>
+        </div>
+
+
+      </ion-list>
+
+    </form>
+  </ion-content>
+</ion-modal-view>

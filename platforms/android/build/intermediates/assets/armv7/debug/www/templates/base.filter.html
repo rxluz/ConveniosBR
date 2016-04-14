@@ -1,0 +1,142 @@
+<ion-modal-view class="formPage filter" ng-class="modal.close.class+'-full'">
+  <ion-header-bar>
+    <div class="buttons">
+        <button
+          ng-click="modal.close.start();"
+          class="button button-icon flaticon-delete button-right def"
+          ></button>
+    </div>
+
+    <h1 class="title">
+      Filtros
+    </h1>
+
+    <div class="buttons">
+      <button
+        class="button button-icon flaticon-tool "
+        ></button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content ng-class="[modal.close.class]">
+    <form novalidate="" class="filterForm" id="filterForm">
+
+      <ion-list>
+
+        <div class="buttons divider">
+          <div class="text text-big text-filter">Por tipo de deficiência</div>
+        </div>
+
+        <div class="row">
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon "
+            ><i class="flaticon-people-2 icon"></i><br>Físico</button>
+          </div>
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon "
+            ><i class="flaticon-help icon"></i><br>Visual</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-medical icon"></i><br>Auditiva</button>
+          </div>
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon "
+            ><i class="flaticon-people-3 icon"></i><br>Intelectual</button>
+          </div>
+        </div>
+
+        <div class="buttons divider">
+          <div class="text text-big text-filter">Por categoria de locais</div>
+        </div>
+
+
+        <div class="row">
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-square icon"></i><br>Cultura</button>
+          </div>
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-shapes-2 icon"></i><br>Saúde</button>
+          </div>
+
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-rest icon"></i><br>Lazer</button>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-book icon"></i><br>Educação</button>
+          </div>
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-symbol icon"></i><br>Comercio</button>
+          </div>
+
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-traffic icon"></i><br>Obstáculo</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col buttons">
+            <button
+              ng-if="header.buttons.search"
+              ng-click="header.search.change();"
+              class="button button-right button-icon  "
+            ><i class="flaticon-transport-1 icon"></i><br>Recursos publicos de acessibilidade</button>
+          </div>
+        </div>
+
+
+
+        <div class="buttons">
+          <button ng-class="{'button-disabled': !header.filter.isValid(filterForm)}" ng-click="header.filter.save.start(filterForm, modal)" class="button">Filtrar mapa</button><br>
+          <a href="#" class="filter_advanced" ng-click="header.filter.advanced.start(modal);">Filtros avançados</a>
+        </div>
+
+
+      </ion-list>
+
+    </form>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,1033 @@
+[
+    {
+        "outputFile": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/values-in/values-in.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 67,
+                    "endOffset": 118
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 0,
+                        "startOffset": 1247,
+                        "endColumn": 63,
+                        "endOffset": 1310
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 123,
+                    "endColumn": 67,
+                    "endOffset": 186
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 0,
+                        "startOffset": 1493,
+                        "endColumn": 63,
+                        "endOffset": 1556
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 191,
+                    "endColumn": 66,
+                    "endOffset": 253
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 0,
+                        "startOffset": 1311,
+                        "endColumn": 62,
+                        "endOffset": 1373
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 258,
+                    "endColumn": 72,
+                    "endOffset": 326
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 0,
+                        "startOffset": 2402,
+                        "endColumn": 68,
+                        "endOffset": 2470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 331,
+                    "endColumn": 70,
+                    "endOffset": 397
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 39,
+                        "startColumn": 0,
+                        "startOffset": 2471,
+                        "endColumn": 66,
+                        "endOffset": 2537
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 402,
+                    "endColumn": 66,
+                    "endOffset": 464
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 0,
+                        "startOffset": 2045,
+                        "endColumn": 62,
+                        "endOffset": 2107
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 469,
+                    "endColumn": 64,
+                    "endOffset": 529
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 0,
+                        "startOffset": 1786,
+                        "endColumn": 60,
+                        "endOffset": 1846
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 534,
+                    "endColumn": 71,
+                    "endOffset": 601
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 0,
+                        "startOffset": 1977,
+                        "endColumn": 67,
+                        "endOffset": 2044
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 606,
+                    "endColumn": 68,
+                    "endOffset": 670
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 0,
+                        "startOffset": 1847,
+                        "endColumn": 64,
+                        "endOffset": 1911
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 675,
+                    "endColumn": 68,
+                    "endOffset": 739
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 0,
+                        "startOffset": 1912,
+                        "endColumn": 64,
+                        "endOffset": 1976
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 744,
+                    "endColumn": 53,
+                    "endOffset": 793
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 0,
+                        "startOffset": 110,
+                        "endColumn": 49,
+                        "endOffset": 159
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 798,
+                    "endColumn": 66,
+                    "endOffset": 860
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 0,
+                        "startOffset": 160,
+                        "endColumn": 62,
+                        "endOffset": 222
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 865,
+                    "endColumn": 98,
+                    "endOffset": 959
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 43,
+                        "startColumn": 0,
+                        "startOffset": 2732,
+                        "endColumn": 94,
+                        "endOffset": 2826
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 964,
+                    "endColumn": 61,
+                    "endOffset": 1021
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 1042,
+                        "endColumn": 57,
+                        "endOffset": 1099
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1026,
+                    "endColumn": 59,
+                    "endOffset": 1081
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 806,
+                        "endColumn": 55,
+                        "endOffset": 861
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1086,
+                    "endColumn": 62,
+                    "endOffset": 1144
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 571,
+                        "endColumn": 58,
+                        "endOffset": 629
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1149,
+                    "endColumn": 59,
+                    "endOffset": 1204
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 750,
+                        "endColumn": 55,
+                        "endOffset": 805
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1209,
+                    "endColumn": 61,
+                    "endOffset": 1266
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 862,
+                        "endColumn": 57,
+                        "endOffset": 919
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1271,
+                    "endColumn": 65,
+                    "endOffset": 1332
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 920,
+                        "endColumn": 61,
+                        "endOffset": 981
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1337,
+                    "endColumn": 62,
+                    "endOffset": 1395
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 298,
+                        "endColumn": 58,
+                        "endOffset": 356
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1400,
+                    "endColumn": 59,
+                    "endOffset": 1455
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 694,
+                        "endColumn": 55,
+                        "endOffset": 749
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1460,
+                    "endColumn": 59,
+                    "endOffset": 1515
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 515,
+                        "endColumn": 55,
+                        "endOffset": 570
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1520,
+                    "endColumn": 61,
+                    "endOffset": 1577
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 1100,
+                        "endColumn": 57,
+                        "endOffset": 1157
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1582,
+                    "endColumn": 63,
+                    "endOffset": 1641
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 982,
+                        "endColumn": 59,
+                        "endOffset": 1041
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1646,
+                    "endColumn": 67,
+                    "endOffset": 1709
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 630,
+                        "endColumn": 63,
+                        "endOffset": 693
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1714,
+                    "endColumn": 51,
+                    "endOffset": 1761
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 357,
+                        "endColumn": 47,
+                        "endOffset": 404
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 1766,
+                    "endColumn": 62,
+                    "endOffset": 1824
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 405,
+                        "endColumn": 58,
+                        "endOffset": 463
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1829,
+                    "endColumn": 54,
+                    "endOffset": 1879
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 464,
+                        "endColumn": 50,
+                        "endOffset": 514
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 1884,
+                    "endColumn": 92,
+                    "endOffset": 1972
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 1158,
+                        "endColumn": 88,
+                        "endOffset": 1246
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 1977,
+                    "endColumn": 60,
+                    "endOffset": 2033
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 42,
+                        "startColumn": 0,
+                        "startOffset": 2675,
+                        "endColumn": 56,
+                        "endOffset": 2731
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2038,
+                    "endColumn": 75,
+                    "endOffset": 2109
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 40,
+                        "startColumn": 0,
+                        "startOffset": 2538,
+                        "endColumn": 71,
+                        "endOffset": 2609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2114,
+                    "endColumn": 58,
+                    "endOffset": 2168
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 0,
+                        "startOffset": 1374,
+                        "endColumn": 54,
+                        "endOffset": 1428
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2173,
+                    "endColumn": 68,
+                    "endOffset": 2237
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 41,
+                        "startColumn": 0,
+                        "startOffset": 2610,
+                        "endColumn": 64,
+                        "endOffset": 2674
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2242,
+                    "endColumn": 83,
+                    "endOffset": 2321
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 37,
+                        "startColumn": 0,
+                        "startOffset": 2322,
+                        "endColumn": 79,
+                        "endOffset": 2401
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2326,
+                    "endColumn": 118,
+                    "endOffset": 2440
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 0,
+                        "startOffset": 110,
+                        "endColumn": 114,
+                        "endOffset": 224
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2445,
+                    "endColumn": 59,
+                    "endOffset": 2500
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 529,
+                        "endColumn": 55,
+                        "endOffset": 584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2505,
+                    "endColumn": 141,
+                    "endOffset": 2642
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 300,
+                        "endColumn": 137,
+                        "endOffset": 437
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2647,
+                    "endColumn": 94,
+                    "endOffset": 2737
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 438,
+                        "endColumn": 90,
+                        "endOffset": 528
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2742,
+                    "endColumn": 80,
+                    "endOffset": 2818
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 223,
+                        "endColumn": 76,
+                        "endOffset": 299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2823,
+                    "endColumn": 69,
+                    "endOffset": 2888
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 585,
+                        "endColumn": 65,
+                        "endOffset": 650
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2893,
+                    "endColumn": 67,
+                    "endOffset": 2956
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 0,
+                        "startOffset": 1429,
+                        "endColumn": 63,
+                        "endOffset": 1492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 2961,
+                    "endColumn": 76,
+                    "endOffset": 3033
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 0,
+                        "startOffset": 225,
+                        "endColumn": 72,
+                        "endOffset": 297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3038,
+                    "endColumn": 112,
+                    "endOffset": 3146
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 44,
+                        "startColumn": 0,
+                        "startOffset": 2827,
+                        "endColumn": 108,
+                        "endOffset": 2935
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 3151,
+                    "endColumn": 73,
+                    "endOffset": 3220
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 924,
+                        "endColumn": 69,
+                        "endOffset": 993
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 3225,
+                    "endColumn": 124,
+                    "endOffset": 3345
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 803,
+                        "endColumn": 120,
+                        "endOffset": 923
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 3350,
+                    "endColumn": 69,
+                    "endOffset": 3415
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 651,
+                        "endColumn": 65,
+                        "endOffset": 716
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 3420,
+                    "endColumn": 89,
+                    "endOffset": 3505
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_content_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 717,
+                        "endColumn": 85,
+                        "endOffset": 802
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 3510,
+                    "endColumn": 54,
+                    "endOffset": 3560
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 0,
+                        "startOffset": 1621,
+                        "endColumn": 50,
+                        "endOffset": 1671
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3565,
+                    "endColumn": 72,
+                    "endOffset": 3633
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 0,
+                        "startOffset": 2108,
+                        "endColumn": 68,
+                        "endOffset": 2176
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3638,
+                    "endColumn": 74,
+                    "endOffset": 3708
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 0,
+                        "startOffset": 2177,
+                        "endColumn": 70,
+                        "endOffset": 2247
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 3713,
+                    "endColumn": 54,
+                    "endOffset": 3763
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 0,
+                        "startOffset": 1672,
+                        "endColumn": 50,
+                        "endOffset": 1722
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3768,
+                    "endColumn": 77,
+                    "endOffset": 3841
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 0,
+                        "startOffset": 2248,
+                        "endColumn": 73,
+                        "endOffset": 2321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 54,
+                    "startColumn": 4,
+                    "startOffset": 3846,
+                    "endColumn": 66,
+                    "endOffset": 3908
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 0,
+                        "startOffset": 1723,
+                        "endColumn": 62,
+                        "endOffset": 1785
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 55,
+                    "startColumn": 4,
+                    "startOffset": 3913,
+                    "endColumn": 67,
+                    "endOffset": 3976
+                },
+                "from": {
+                    "file": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/values-in/android_ui_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 0,
+                        "startOffset": 1557,
+                        "endColumn": 63,
+                        "endOffset": 1620
+                    }
+                }
+            }
+        ]
+    }
+]

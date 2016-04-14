@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/verify_checkmark.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/verify_checkmark.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ondemand_overlay.9.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/ondemand_overlay.9.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ic_action_remove.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/res/drawable-hdpi/ic_action_remove.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ic_menu_share_holo_light.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/ic_menu_share_holo_light.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ic_action_next_item.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/res/drawable-hdpi/ic_action_next_item.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ic_action_previous_item.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/res/drawable-hdpi/ic_action_previous_item.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/dropdown_popup_background_up.9.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/dropdown_popup_background_up.9.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/dropdown_popup_background_down.9.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/dropdown_popup_background_down.9.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/bubble_arrow_up.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/bubble_arrow_up.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/icon.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/color_picker_advanced_select_handle.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/color_picker_advanced_select_handle.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ic_search.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/ic_search.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/ic_warning.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/ic_warning.png"
+    },
+    {
+        "merged": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/res/merged/x86/debug/drawable-hdpi-v4/bubble.9.png",
+        "source": "/Volumes/Novo volume/Users/RxLuz/Google Drive/Projetos/Ministério da Justiça/alerta_convenio_app/platforms/android/build/intermediates/exploded-aar/org.xwalk/xwalk_core_library/17.46.448.10/res/drawable-hdpi/bubble.9.png"
+    }
+]

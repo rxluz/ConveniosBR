@@ -1,0 +1,41 @@
+<ion-view class="performerAdd formPage" title="performerAdd" >
+  <ion-content class='has-header'>
+    <form novalidate class="performerAddForm" id="performerAddForm" name="performerAddForm">
+      <div class="list">
+        <div class="ion-group">
+          Preencha o formulário abaixo:<br><br>
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Seu nome</span>
+              <i class="icon flaticon-black-3 placeholder-icon"></i>
+              <input type="text" required placeholder="Digite seu nome" ng-model="performerAdd.data.name">
+          </label>
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Email</span>
+              <i class="icon flaticon-interface-2 placeholder-icon"></i>
+              <input type="email" required  placeholder="Email" ng-model="performerAdd.data.email">
+          </label>
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Telefone (opcional)</span>
+              <i class="icon ion-iphone placeholder-icon"></i>
+              <input type="text" required  placeholder="Telefone"  ui-br-phone-number  ng-model="performerAdd.data.telephone">
+          </label>
+
+
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Mensagem</span>
+              <i class="icon flaticon-editing placeholder-icon"></i>
+              <textarea placeholder="Observações" ng-model="performerAdd.data.obs"></textarea>
+          </label>
+
+         </div>
+
+         <div class="buttons">
+           <button ng-class="{'button-disabled': !performerAdd.isValid(performerAddForm)}" class="button" ng-click="performerAdd.save.start(performerAddForm);">Enviar solicitação</button>
+         </div>
+      </div><!-- list -->
+
+    </form><!-- performerAddForm -->
+  </ion-content>
+</ion-view>
