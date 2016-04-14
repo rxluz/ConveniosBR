@@ -79,7 +79,7 @@ Dentro do projeto existe na pasta  [`platforms/ios/`](https://github.com/rxluz/C
 
 ## Desenvolvimento
 
-O ConvêniosBR é desenvolvido utilizando o framewok opensource [Ionic 1.2](http://ionicframework.com/), o código fonte para alterações está na pasta `www/`, recomenda-se o conhecimento de [Angular 1.3+](https://angularjs.org/), [Sass](http://sass-lang.com/) e [Apache Cordova](https://cordova.apache.org/).
+O ConvêniosBR é desenvolvido utilizando o framewok opensource [Ionic 1.2](http://ionicframework.com/), o código fonte para alterações está na pasta [`www/`](https://github.com/rxluz/ConveniosBR/tree/master/www), recomenda-se o conhecimento de [Angular 1.3+](https://angularjs.org/), [Sass](http://sass-lang.com/) e [Apache Cordova](https://cordova.apache.org/).
 
 A partir do Ionic é gerado um código nativo para a plataforma Android e iOS.
 
