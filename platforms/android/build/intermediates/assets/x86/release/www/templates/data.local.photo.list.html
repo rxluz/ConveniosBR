@@ -1,0 +1,46 @@
+<ion-modal-view class="formPage local_photo_list" >
+  <ion-header-bar class="bar-calm">
+    <div class="buttons">
+        <button
+          ng-click="photo.add.popup.close()"
+          class="button button-icon flaticon-delete button-right def"
+          ></button>
+    </div>
+
+    <h1 class="title">
+      Adicione uma foto
+    </h1>
+  </ion-header-bar>
+
+  <ion-content ng-class="[ modal.close.class]" scroll="true" class="has-header">
+    <form novalidate="" class="emailForm"   name="emailForm" id="emailForm">
+      <ion-list>
+
+        <div  class="image_list" ng-class="photo.add.delete.class($index)" ng-repeat="img in photo.add.list track by $index">
+          <a href="#"  ng-click="photo.add.delete.start($index)"><i class="icon flaticon-shapes-1"></i>Apagar</a><br>
+          <img src="{{img}}" alt=""><br>
+          <label class="item item-input item-floating-label">
+             <span class="input-label">Legenda</span>
+              <i class="icon flaticon-editing placeholder-icon"></i>
+              <input type="text" required placeholder="Legenda dessa foto" ng-model="userEdit.data.name">
+          </label>
+
+        </div>
+
+
+
+
+        <div class="item item-bottom-border" ng-click="photo.add.init(2, true)">
+          <i class="icon flaticon-technology"></i><br>
+          <a href="#">Mais fotos</a>
+        </div>
+
+        <div class="item buttons">
+          <button class="button">Salvar</button>
+        </div>
+
+      </ion-list>
+
+    </form>
+  </ion-content>
+</ion-modal-view>

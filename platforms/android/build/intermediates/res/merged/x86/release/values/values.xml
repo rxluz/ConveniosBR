@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xwalk_resources_list">
+<item>icudtl.dat</item>
+<item>xwalk.pak</item>
+</string-array>
+    <attr format="reference" name="select_dialog_multichoice"/>
+    <attr format="reference" name="select_dialog_singlechoice"/>
+    <color name="color_picker_background_color">#FFFFFF</color>
+    <color name="color_picker_border_color">#B0B0B0</color>
+    <color name="dropdown_dark_divider_color">#C0C0C0</color>
+    <color name="dropdown_divider_color">#E5E5E5</color>
+    <declare-styleable name="ButtonCompat"><attr format="reference|color" name="buttonColor"/></declare-styleable>
+    <dimen name="color_button_height">60dp</dimen>
+    <dimen name="color_picker_gradient_margin">14.5dp</dimen>
+    <dimen name="config_min_scaling_span">27.0mm</dimen>
+    <dimen name="config_min_scaling_touch_major">48.0dp</dimen>
+    <dimen name="dropdown_item_divider_height">1px</dimen>
+    <dimen name="dropdown_item_height">44dp</dimen>
+    <dimen name="keyboard_accessory_chip_height">32dp</dimen>
+    <dimen name="keyboard_accessory_fading_edge_length">16dp</dimen>
+    <dimen name="keyboard_accessory_half_padding">4dp</dimen>
+    <dimen name="keyboard_accessory_height">48dp</dimen>
+    <dimen name="keyboard_accessory_padding">8dp</dimen>
+    <dimen name="keyboard_accessory_text_size">14sp</dimen>
+    <dimen name="link_preview_overlay_radius">7dp</dimen>
+    <item name="dropdown_popup_window" type="id"/>
+    <string name="accessibility_date_picker_month">"Month"</string>
+    <string name="accessibility_date_picker_week">"Week"</string>
+    <string name="accessibility_date_picker_year">"Year"</string>
+    <string name="accessibility_datetime_picker_date">"Date"</string>
+    <string name="accessibility_datetime_picker_time">"Time"</string>
+    <string name="accessibility_time_picker_ampm">"AM/PM"</string>
+    <string name="accessibility_time_picker_hour">"Hour"</string>
+    <string name="accessibility_time_picker_milli">"Millisecond"</string>
+    <string name="accessibility_time_picker_minute">"Minute"</string>
+    <string name="accessibility_time_picker_second">"Second"</string>
+    <string name="actionbar_share">"Share"</string>
+    <string name="actionbar_web_search">"Web search"</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="app_name">ConveniosBR</string>
+    <string name="autofill_popup_content_description">"Showing autofill popup"</string>
+    <string name="color_picker_button_black">"Black"</string>
+    <string name="color_picker_button_blue">"Blue"</string>
+    <string name="color_picker_button_cancel">"Cancel"</string>
+    <string name="color_picker_button_cyan">"Cyan"</string>
+    <string name="color_picker_button_green">"Green"</string>
+    <string name="color_picker_button_magenta">"Magenta"</string>
+    <string name="color_picker_button_more">"More"</string>
+    <string name="color_picker_button_red">"Red"</string>
+    <string name="color_picker_button_set">"Set"</string>
+    <string name="color_picker_button_white">"White"</string>
+    <string name="color_picker_button_yellow">"Yellow"</string>
+    <string name="color_picker_dialog_title">"Select color"</string>
+    <string name="color_picker_hue">"Hue"</string>
+    <string name="color_picker_saturation">"Saturation"</string>
+    <string name="color_picker_value">"Value"</string>
+    <string name="copy_to_clipboard_failure_message">"Failed to copy to the clipboard"</string>
+    <string name="crosswalk_install_title">"Crosswalk Project Install"</string>
+    <string name="date_picker_dialog_clear">"Clear"</string>
+    <string name="date_picker_dialog_other_button_label">"Other"</string>
+    <string name="date_picker_dialog_set">"Set"</string>
+    <string name="date_picker_dialog_title">"Set date"</string>
+    <string name="date_time_picker_dialog_title">"Set date and time"</string>
+    <string name="decompression_progress_message">"Decompressing the Crosswalk Project Service..."</string>
+    <string name="download_already_exists_toast">"Downloading file already exists, abort."</string>
+    <string name="download_failed_device_not_found">"Download failed. Storage device not found."</string>
+    <string name="download_failed_insufficient_space">"Download failed. Insufficient disk space."</string>
+    <string name="download_failed_message">"Download failed. A network error occurred."</string>
+    <string name="download_failed_time_out">"Download failed. The network connection timed out."</string>
+    <string name="download_failed_toast">"Failed to download file."</string>
+    <string name="download_finished_toast">"Finished to download file."</string>
+    <string name="download_no_permission_toast">"No permission to write, abort."</string>
+    <string name="download_progress_message">"Downloading the Crosswalk Project Service from remote host..."</string>
+    <string name="download_start_toast">"Downloading file:"</string>
+    <string name="http_auth_log_in">"Log In"</string>
+    <string name="http_auth_password">"Password"</string>
+    <string name="http_auth_title">"Authentication Required"</string>
+    <string name="http_auth_user_name">"Username"</string>
+    <string name="js_alert_title">"Javascript Alert"</string>
+    <string name="js_confirm_title">"Javascript Confirm"</string>
+    <string name="js_prompt_title">"Javascript Prompt"</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="low_memory_error">"Unable to complete previous operation due to low memory"</string>
+    <string name="market_open_failed_message">"Failed to open the app store. You need an app store to download the Crosswalk Project Service."</string>
+    <string name="media_player_error_button">"OK"</string>
+    <string name="media_player_error_text_invalid_progressive_playback">"Sorry, this video is not valid for streaming to this device."</string>
+    <string name="media_player_error_text_unknown">"Sorry, this video cannot be played."</string>
+    <string name="media_player_error_title">"Cannot play video"</string>
+    <string name="media_player_loading_video">"Loading video"</string>
+    <string name="month_picker_dialog_title">"Set month"</string>
+    <string name="opening_file_error">"Failed to open selected file"</string>
+    <string name="password_generation_popup_content_description">"Showing password generation popup"</string>
+    <string name="profiler_error_toast">"Failed to start profiler"</string>
+    <string name="profiler_no_storage_toast">"Can\'t start profiler because external storage is not ready"</string>
+    <string name="profiler_started_toast">"Profiler started"</string>
+    <string name="profiler_stopped_toast">"Profiler finished. Results are in %1$s."</string>
+    <string name="ssl_alert_title">"Ssl Certificate Error Alert"</string>
+    <string name="startup_architecture_mismatch_message">"The Crosswalk Project Service must be updated to match the CPU architecture of the device. Please install it from the app store, then restart APP_NAME."</string>
+    <string name="startup_architecture_mismatch_title">"Mismatch of CPU Architecture for the Crosswalk Project Service"</string>
+    <string name="startup_incomplete_library_message">"Please repackage APP_NAME."</string>
+    <string name="startup_incomplete_library_title">"Incomplete Crosswalk Project Service"</string>
+    <string name="startup_newer_version_message">"APP_NAME is not compatible with the installed version of the Crosswalk Project Service."</string>
+    <string name="startup_newer_version_title">"Incompatible Crosswalk Project Service"</string>
+    <string name="startup_not_found_message">"APP_NAME requires the Crosswalk Project Service to work. Please install it from the app store, then restart APP_NAME."</string>
+    <string name="startup_not_found_title">"Crosswalk Project Service Not Found"</string>
+    <string name="startup_older_version_message">"The version of the Crosswalk Project Service on this system must be updated. Please install it from the app store, then restart APP_NAME."</string>
+    <string name="startup_older_version_title">"New Crosswalk Project Service Required"</string>
+    <string name="startup_signature_check_error_message">"The integrity of the Crosswalk Project Service cannot be verified. Please uninstall it and restart APP_NAME."</string>
+    <string name="startup_signature_check_error_title">"The Crosswalk Project Signature Verification Failed"</string>
+    <string name="time_picker_dialog_am">"AM"</string>
+    <string name="time_picker_dialog_hour_minute_separator">":"</string>
+    <string name="time_picker_dialog_minute_second_separator">":"</string>
+    <string name="time_picker_dialog_pm">"PM"</string>
+    <string name="time_picker_dialog_second_subsecond_separator">"."</string>
+    <string name="time_picker_dialog_title">"Set time"</string>
+    <string name="week_picker_dialog_title">"Set week"</string>
+    <string name="xwalk_cancel">"Cancel"</string>
+    <string name="xwalk_close">"Close"</string>
+    <string name="xwalk_continue">"Continue"</string>
+    <string name="xwalk_get_crosswalk">"Get Crosswalk"</string>
+    <string name="xwalk_retry">"Retry"</string>
+    <style name="ButtonCompat" parent="ButtonCompatBase">
+    
+        
+    <item name="android:background">@drawable/button_compat_shape</item>
+    
+        
+    <item name="android:textStyle">bold</item>
+    
+    
+  </style>
+    <style name="ButtonCompatBase">
+    
+        
+    <item name="android:minWidth">88dp</item>
+    
+        
+    <item name="android:minHeight">36dp</item>
+    
+        
+    <item name="android:textSize">14sp</item>
+    
+        
+    <item name="android:paddingLeft">20dp</item>
+    
+        
+    <item name="android:paddingRight">20dp</item>
+    
+        
+    <item name="android:paddingTop">5dp</item>
+    
+        
+    <item name="android:paddingBottom">5dp</item>
+    
+        
+    <item name="android:textAllCaps">true</item>
+    
+        
+    <item name="android:focusable">true</item>
+    
+        
+    <item name="android:clickable">true</item>
+    
+        
+    <item name="android:gravity">center_vertical|center_horizontal</item>
+    
+    
+  </style>
+    <style name="ButtonCompatBorderless" parent="ButtonCompat">
+    
+        
+    <item name="android:background">?android:attr/selectableItemBackground</item>
+    
+    
+  </style>
+    <style name="ButtonCompatBorderlessOverlay">
+    
+        
+    <item name="android:buttonStyle">@style/ButtonCompatBorderless</item>
+    
+    
+  </style>
+    <style name="ButtonCompatOverlay">
+    
+        
+    <item name="android:buttonStyle">@style/ButtonCompat</item>
+    
+    
+  </style>
+    <style name="DropdownPopupWindow" parent="@android:style/Widget.ListPopupWindow">
+    
+        
+    <item name="android:popupBackground">@drawable/dropdown_popup_background</item>
+    
+    
+  </style>
+    <style name="SelectActionMenuShare">
+    
+        
+    <item name="android:icon">@drawable/ic_menu_share_holo_light</item>
+    
+    
+  </style>
+    <style name="SelectActionMenuWebSearch">
+    
+        
+    <item name="android:icon">@drawable/ic_search</item>
+    
+    
+  </style>
+    <style name="SelectPopupDialog">
+    
+        
+    <item name="select_dialog_singlechoice">@android:layout/select_dialog_singlechoice</item>
+    
+        
+    <item name="select_dialog_multichoice">@android:layout/select_dialog_multichoice</item>
+    
+    
+  </style>
+</resources>
