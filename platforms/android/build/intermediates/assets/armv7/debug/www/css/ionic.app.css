@@ -19401,7 +19401,7 @@ ion-nav-view.has-alert {
   background-position: center;
   background-repeat: no-repeat; }
   .onboarding.onboardingOne {
-    background-image: url("../img/others_onboarding_one.png"), linear-gradient(#a1bcb3, #a1bcb3);
+    background-image: url("../img/others_onboarding_one.png"), linear-gradient(#509A8F, #509A8F);
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -ms-animation-name: fadeIn;
@@ -19438,7 +19438,7 @@ ion-nav-view.has-alert {
     -o-backface-visibility: hidden;
     backface-visibility: hidden; }
   .onboarding.onboardingTwo {
-    background-image: url("../img/others_onboarding_two.png"), linear-gradient(#c2c3c2, #b5dbcc);
+    background-image: url("../img/others_onboarding_two.png"), linear-gradient(#5EACA2, #5EACA2);
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -ms-animation-name: fadeIn;
@@ -19475,7 +19475,7 @@ ion-nav-view.has-alert {
     -o-backface-visibility: hidden;
     backface-visibility: hidden; }
   .onboarding.onboardingThree {
-    background-image: url("../img/others_onboarding_three.png"), linear-gradient(to right, #84a786, #bcd3cf);
+    background-image: url("../img/others_onboarding_three.png"), linear-gradient(to right, #6FC0B5, #6FC0B5);
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -ms-animation-name: fadeIn;
@@ -19534,8 +19534,13 @@ ion-nav-view.has-alert {
       font-size: 1.1rem; }
       .onboarding .slider ion-slide img {
         padding-bottom: 15px; }
+      .onboarding .slider ion-slide .onboardingButtons {
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+        left: 0px;
+        text-align: center; }
       .onboarding .slider ion-slide .button {
-        top: 10px;
         width: 110px;
         background-color: #2B4243; }
 
@@ -19578,7 +19583,7 @@ ion-nav-view.has-alert {
 .tab-wrap a {
   color: #595959; }
 
-.slider-slides {
+.local .slider-slides {
   background-color: lightgray !important; }
 
 .before-bar-local-scroll {
