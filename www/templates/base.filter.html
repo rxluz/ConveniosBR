@@ -19,8 +19,10 @@
   </ion-header-bar>
 
   <ion-content ng-class="[modal.close.class]">
-    <form novalidate="" class="filterForm" id="filterForm">
+    <i>Em desenvolvimento</i><br>
+     <form novalidate="" class="filterForm" id="filterForm">
 
+<!--
       <ion-list>
 
         <div class="buttons divider">
@@ -125,12 +127,12 @@
               class="button button-right button-icon  "
             ><i class="flaticon-transport-1 icon"></i><br>Recursos publicos de acessibilidade</button>
           </div>
-        </div>
+        </div> -->
 
 
 
         <div class="buttons">
-          <button ng-class="{'button-disabled': !header.filter.isValid(filterForm)}" ng-click="header.filter.save.start(filterForm, modal)" class="button">Filtrar mapa</button><br>
+          <button ng-class="{'button-disabled': !header.filter.isValid(filterForm)}" ng-click="header.filter.save.start(filterForm, modal)" class="button">Filtrar convênios</button><br>
           <a href="#" class="filter_advanced" ng-click="header.filter.advanced.start(modal);">Filtros avançados</a>
         </div>
 

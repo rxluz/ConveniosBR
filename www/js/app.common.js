@@ -834,8 +834,8 @@ app.run(function($rootScope, $ionicBackdrop, $ionicSideMenuDelegate, $window, $s
   };
 
   $rootScope.moneyObject = {
-    iconOn : 'ion-ios-calculator',
-    iconOff : 'ion-ios-calculator-outline',
+    iconOn : 'ion-social-usd',
+    iconOff : 'ion-social-usd',
     iconOnColor: 'rgb(200, 200, 100)',
     iconOffColor:  'rgb(131, 131, 131)',
     rating:  1,
