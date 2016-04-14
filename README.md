@@ -23,7 +23,7 @@
 
 O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/ConveniosBR/blob/master/LICENSE.md) que visa criar uma solução compatível com as plataformas [iOS](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) e [Android](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) para monitorar os convênios firmados pelo governo federal, através dela o usuário pode:
 
- * Listar os convênios existentes na sua localidade (estado ou municipio)
+ * Listar os convênios existentes na sua localidade (estado, municipio, região)
  * Ver informações especificas de um determinado convênio
  * Monitorar um convênio e receber atualizações de status
  * Denunciar irregularidades em um determinado convênio a partir da plataforma [e-OUV](https://sistema.ouvidorias.gov.br/publico/Manifestacao/RegistrarManifestacao.aspx).
@@ -35,7 +35,7 @@ O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/Convenio
  * Visualizar informações financeiras de um convênio
  * Visualizar o cronograma de atividades de um convênio
  * Visualizar informações sobre o concedente, proponente e interveniente
- * Compartilhar as informações de um determinado convênios via Facebook, Twitter, Email e Whatsapp
+ * Compartilhar as informações de um determinado convênio via Facebook, Twitter, Email e Whatsapp
  * Acessar a versão acessível do ConvêniosBR
 
 O acesso ao aplicativo é livre, entretanto para algumas funções será necessário o cadastro do usuário, esse cadastro pode ser feito a partir do formulário de inscrição disponível ou a partir do login via Facebook.
@@ -50,6 +50,8 @@ O projeto detecta automaticamente quando o usuário possui um recurso de acessib
 
 # Instalando e configurando
 --------------------------
+
+**Caso você deseje apenas visualizar o projeto num smartphone Android baixe o APK disponível em [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk), para versão web acesse esse [link](http://api.appock.co/convenios.br/www).**
 
 **Clone este repositório.**
 
@@ -84,6 +86,7 @@ A partir do Ionic é gerado um código nativo para a plataforma Android e iOS.
 
 # Interfaces do projeto
 -------------------------------------
+**Os screenshots abaixo não contém informações reais, servindo apenas como referência estrural do projeto**
 
 ## Ícone e apresentação
 <img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2662_1024.jpg" style="float: left !important;" width=50%></img>
