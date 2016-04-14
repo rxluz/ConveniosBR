@@ -22,7 +22,7 @@
 --------
 <img align=left hspace=10 src="https://github.com/rxluz/ConveniosBR/raw/master/resources/ios/icon/icon-72%402x.png"></img>
 
-O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/ConveniosBR/blob/master/LICENSE.md) que visa criar uma solução compatível com as plataformas [iOS](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) e [Android](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) para monitorar os convênios firmados pelo governo federal, através dele o usuário pode:
+O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/ConveniosBR/blob/master/LICENSE.md) que visa criar uma solução compatível com as plataformas [iOS](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) e [Android](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) para monitorar os convênios firmados pelo governo federal, através dele o cidadão pode:
 
  * Listar os convênios existentes na sua localidade (região, estado, municipio)
  * Ver informações especificas de um determinado convênio
