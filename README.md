@@ -32,7 +32,7 @@ O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/Convenio
  * Acessar gráficos e outras informações estatísticas sobre um proponente ou convênio.
  * Efetuar pesquisas por texto ou voz para encontrar um determinado convênio
  * Efetuar filtros nas informações dispostas no APP
- * Postar comentários sobre um convênio ou consultar os comentários postados por outros usuários
+ * Postar comentários e fotos sobre um convênio ou consultar os comentários e fotos postados por outros usuários
  * Visualizar informações financeiras de um convênio
  * Visualizar o cronograma de atividades de um convênio
  * Visualizar informações sobre o concedente, proponente e interveniente
