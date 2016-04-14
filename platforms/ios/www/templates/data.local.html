@@ -5,20 +5,19 @@
       <div class="slider">
         <ion-slide-box  ng-style="{'height': '180px'}" >
           <ion-slide>
-            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            <div id="chartContainer" style="padding-top: 20px; height: 150px; width: 100%;"></div>
           </ion-slide>
 
 
-          <ion-slide >&nbsp;</ion-slide>
-
-
-
+          <ion-slide >
+            <div id="chartPropContainer" style="padding-top: 20px; height: 150px; width: 100%;"></div>
+          </ion-slide>
 
         </ion-slide-box>
       </div>
 
-      <button class="fab fab-right icon-only button-assertive button"   >
-        <i class="ion-ios-flag"></i>
+      <button class="fab fab-right icon-only button-assertive button"  ng-click="follow.init()" >
+        <i class="ion-gear-a"></i>
       </button>
 
 
@@ -29,9 +28,9 @@
         <ionic-ratings ratingsobj='moneyObject'></ionic-ratings></p>
 
         <div class="row">
-          <div class="col col-33 "><a href="#" ng-click="route.start()"><i class="icon ion-cash"></i><br>Financeiro</a></div>
-          <div class="col col-33 divider-left"><a href="#"><i class="icon ion-ios-calendar-outline"></i><br>Cronograma</a></div>
-          <div class="col col-33 divider-left"><a href='#' ng-click="review.init(1)"><i class="icon ion-chatbubbles"></i><br>Comentários</a></div>
+          <div class="col col-33 "><a href="#" ng-click="finance.init()"><i class="icon ion-cash"></i><br>Financeiro</a></div>
+          <div class="col col-33 divider-left" ng-click="timeline.init()"><a href="#"><i class="icon ion-ios-calendar-outline"></i><br>Cronograma</a></div>
+          <div class="col col-33 divider-left"><a href='#' ng-click="comments.all.init(1)"><i class="icon ion-chatbubbles"></i><br>Comentários</a></div>
         </div>
       </ion-item>
 
@@ -54,7 +53,7 @@
       <div  class="tab-wrap" >
 
         <!-- active tab on page load gets checked attribute -->
-        <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+        <input type="radio" id="tab1" name="tabGroup1" class="tab" >
         <label for="tab1">Concedente</label>
 
         <input type="radio" id="tab2" name="tabGroup1" class="tab" checked>
@@ -64,20 +63,24 @@
         <label for="tab3">Interveniente</label>
 
         <div class="tab__content">
-          Rampas / Guias rebaixadas / Banheiros adaptados / Espaço para movimentação de cadeira de rodas / Telefones públicos adaptados / Bebedouros adaptados / Local com boa iluminação
-
+          <p><i class="icon ion-ios-people"></i>MINISTERIO DAS COMUNICACOES</p>
+          <p><i class="icon ion-ios-person"></i>RICARDO JOSE RIBEIRO BERZOINI</p>
+          <p><i class="icon ion-location"></i>Palacio do Planalto</p>
+          <p>CEP: 70160-9000</p>
         </div>
 
         <div class="tab__content">
-          Rampas / Guias rebaixadas / Banheiros adaptados / Espaço para movimentação de cadeira de rodas / Telefones públicos adaptados / Bebedouros adaptados / Local com boa iluminação
-
+          <p><i class="icon ion-ios-people"></i>MINISTERIO DAS COMUNICACOES</p>
+          <p><i class="icon ion-ios-person"></i>RICARDO JOSE RIBEIRO BERZOINI</p>
+          <p><i class="icon ion-location"></i>Palacio do Planalto</p>
+          <p>CEP: 70160-900</p>
         </div>
 
         <div class="tab__content">
-          <h3>Visual</h3>
-          <p>Praesent nonummy mi in odio. Nullam accumsan lorem in dui. Vestibulum turpis sem, aliquet eget, lobortis pellentesque, rutrum eu, nisl. Nullam accumsan lorem in dui. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-
-          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Morbi mattis ullamcorper velit. Pellentesque posuere. Etiam ut purus mattis mauris sodales aliquam. Praesent nec nisl a purus blandit viverra.</p>
+          <p><i class="icon ion-ios-people"></i>MINISTERIO DAS COMUNICACOES</p>
+          <p><i class="icon ion-ios-person"></i>RICARDO JOSE RIBEIRO BERZOINI</p>
+          <p><i class="icon ion-location"></i>Palacio do Planalto</p>
+          <p>CEP: 70160-900</p>
         </div>
 
       </div>

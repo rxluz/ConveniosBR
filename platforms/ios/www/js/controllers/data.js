@@ -148,158 +148,57 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
   };
 
 
-
-  $scope.photo={
-    add: {
-      init: function(id, popupIsOpen){
-        $scope.photo.add.clear(id);
-
-
-
-        $rootScope.menu.footer.show([
-          {
-            icon: "icon flaticon-camera",
-            name: "Tirar uma foto",
-            action: function(){
-              $scope.photo.add.take(id);
-
-            }
-          },
-          {
-            icon: "icon flaticon-square",
-            name: "Foto da biblioteca",
-            action: function(){
-              $scope.photo.add.choose(id);
-            }
-          }
-        ]);
-      },
-
-      clear: function(id){
-        //essa função limpa a lista de fotos toda a vez que o usuário muda de local, impedindo que fotos que foram adicionadas anteriormente sejam vistas na adição de um novo local
-        if($scope.photo.add.id!=id){
-          $scope.photo.add.id=id;
-          $scope.photo.add.list=[];
-        }
-      },
-
-      id: false,
-
-      take: function(id){
-        var options = {
-         quality: 75,
-         destinationType: Camera.DestinationType.DATA_URL,
-         sourceType: Camera.PictureSourceType.CAMERA,
-         allowEdit: true,
-         encodingType: Camera.EncodingType.JPEG,
-         targetWidth: 300,
-         targetHeight: 300,
-         popoverOptions: CameraPopoverOptions,
-         saveToPhotoAlbum: false
-        };
-
-         $cordovaCamera.getPicture(options).then(function (imageData) {
-             //$scope.imgURI = "data:image/jpeg;base64," + imageData;
-             $scope.photo.add.popup.start(1, imageData);
-         }, function (err) {
-             // An error occured. Show a message to the user
-         });
-      },
-
-      choose: function(id){
-        var options = {
-         quality: 75,
-         destinationType: Camera.DestinationType.DATA_URL,
-         sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-         allowEdit: true,
-         encodingType: Camera.EncodingType.JPEG,
-         targetWidth: 300,
-         targetHeight: 300,
-         popoverOptions: CameraPopoverOptions,
-         saveToPhotoAlbum: false,
-         limit: 10
-        };
-
-         $cordovaCamera.getPicture(options).then(function (imageData) {
-             $scope.imgURI = "data:image/jpeg;base64," + imageData;
-             $scope.photo.add.popup.start(1, imageData);
-         }, function (err) {
-             // An error occured. Show a message to the user
-         });
-      },
-
-      popup: {
-        start: function(id, imageData){
-          $scope.photo.add.list.push("data:image/jpeg;base64,"+imageData);
-          //console.log($scope.photo.add.list);
-
-          if(!$scope.photo.add.popup.isOpen){
-            $rootScope.popup.content.start('templates/data.local.photo.list.html', $scope);
-            $scope.photo.add.popup.isOpen=true;
-          }
-
-        },
-
-        isOpen: false,
-
-        close: function(){
-          $scope.photo.add.popup.isOpen=false;
-          $rootScope.modal.close.start();
-        }
-      },
-
-      list: [],
-
-      delete: {
-        start: function($index){
-          //console.log($index+"oi");
-          $scope.photo.add.delete.id=$index;
-          $timeout(function(){
-            $scope.photo.add.list.splice($index);
-            $scope.photo.add.delete.id=false;
-          }, 600);
-
-        },
-
-        class: function($index){
-
-          if($index===$scope.photo.add.delete.id){
-            return ['delete'];
-          }else{
-            return [];
-          }
-
-        },
-
-        id: false
-      }
-
-    },
-
-    fullScreen: {
-      init: function(){
-
-        $rootScope.sliderStyle={
-          height: (window.screen.height-200)+"px"
-        };
-
-        $rootScope.popup.alert.show(
-          'Galeria de fotos', {
-            url: "templates/data.local.photo.full.html"
-          },
-          function(){}
-        );
-
-      }
+  $scope.timeline={
+    init: function(id){
+        $rootScope.popup.content.start('templates/data.local.timeline.html', $scope);
     }
   };
+
+  $scope.follow={
+    init: function(id){
+      //$rootScope.notification.show("Monitoramento ativado", 0);
+      $rootScope.menu.footer.show([
+        {
+          icon: "icon ion-flag",
+          name: "Denunciar esse convênio",
+          action: function(){
+            //console.log('ila');
+            //console.log($rootScope);
+            //alert('ola mundo');
+            var options = {
+                 location: 'yes',
+                 clearcache: 'yes',
+                 toolbar: 'yes'
+               };
+            $cordovaInAppBrowser.open('https://google.com.br', '_blank', options)
+            .then(function(event) {
+              // success
+            })
+            .catch(function(event) {
+              // error
+            });
+
+          }
+        }
+      ]);
+
+
+    }
+  };
+
+  $scope.finance={
+    init: function(id){
+        $rootScope.popup.content.start('templates/data.local.finance.html', $scope);
+    }
+  };
+
 
   $scope.scrollData=function(){
     //scrollInfos.init()
     $rootScope.$apply(function(){
       if($ionicScrollDelegate.getScrollPosition().top>180){
         $rootScope.header.class="bar-local-scroll";
-        $rootScope.header.title="Museu de Arte Moderna de São Paulo";
+        $rootScope.header.title=$scope.infos.name;
       }else{
         $rootScope.header.class="bar-local";
         $rootScope.header.title="";
@@ -316,147 +215,7 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
       $rootScope.popup.content.start('templates/data.local.review.html', $scope);
     }
   };
-  $scope.myChartData = [
-          {
-              value: 30,
-              color:"#F7464A"
-          },
-          {
-              value : 50,
-              color : "#E2EAE9"
-          },
-          {
-              value : 100,
-              color : "#D4CCC5"
-          },
-          {
-              value : 40,
-              color : "#949FB1"
-          },
-          {
-              value : 120,
-              color : "#4D5360"
-          }
-      ];
 
-      //Globals
-      $scope.myChartOptions = {
-          // Boolean - Whether to animate the chart
-          animation: true,
-
-          // Number - Number of animation steps
-          animationSteps: 60,
-
-          // String - Animation easing effect
-          animationEasing: "easeOutQuart",
-
-          // Boolean - If we should show the scale at all
-          showScale: true,
-
-          // Boolean - If we want to override with a hard coded scale
-          scaleOverride: false,
-
-          // ** Required if scaleOverride is true **
-          // Number - The number of steps in a hard coded scale
-          scaleSteps: null,
-          // Number - The value jump in the hard coded scale
-          scaleStepWidth: null,
-          // Number - The scale starting value
-          scaleStartValue: null,
-
-          // String - Colour of the scale line
-          scaleLineColor: "rgba(0,0,0,.1)",
-
-          // Number - Pixel width of the scale line
-          scaleLineWidth: 1,
-
-          // Boolean - Whether to show labels on the scale
-          scaleShowLabels: true,
-
-          // Interpolated JS string - can access value
-          scaleLabel: "<%=value%>",
-
-          // Boolean - Whether the scale should stick to integers, not floats even if drawing space is there
-          scaleIntegersOnly: true,
-
-          // Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-          scaleBeginAtZero: false,
-
-          // String - Scale label font declaration for the scale label
-          scaleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-
-          // Number - Scale label font size in pixels
-          scaleFontSize: 12,
-
-          // String - Scale label font weight style
-          scaleFontStyle: "normal",
-
-          // String - Scale label font colour
-          scaleFontColor: "#666",
-
-          // Boolean - whether or not the chart should be responsive and resize when the browser does.
-          responsive: false,
-
-          // Boolean - Determines whether to draw tooltips on the canvas or not
-          showTooltips: true,
-
-          // Array - Array of string names to attach tooltip events
-          tooltipEvents: ["mousemove", "touchstart", "touchmove"],
-
-          // String - Tooltip background colour
-          tooltipFillColor: "rgba(0,0,0,0.8)",
-
-          // String - Tooltip label font declaration for the scale label
-          tooltipFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-
-          // Number - Tooltip label font size in pixels
-          tooltipFontSize: 14,
-
-          // String - Tooltip font weight style
-          tooltipFontStyle: "normal",
-
-          // String - Tooltip label font colour
-          tooltipFontColor: "#fff",
-
-          // String - Tooltip title font declaration for the scale label
-          tooltipTitleFontFamily: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-
-          // Number - Tooltip title font size in pixels
-          tooltipTitleFontSize: 14,
-
-          // String - Tooltip title font weight style
-          tooltipTitleFontStyle: "bold",
-
-          // String - Tooltip title font colour
-          tooltipTitleFontColor: "#fff",
-
-          // Number - pixel width of padding around tooltip text
-          tooltipYPadding: 6,
-
-          // Number - pixel width of padding around tooltip text
-          tooltipXPadding: 6,
-
-          // Number - Size of the caret on the tooltip
-          tooltipCaretSize: 8,
-
-          // Number - Pixel radius of the tooltip border
-          tooltipCornerRadius: 6,
-
-          // Number - Pixel offset from point x to tooltip edge
-          tooltipXOffset: 10,
-
-          // String - Template string for single tooltips
-          tooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
-
-          // String - Template string for single tooltips
-          multiTooltipTemplate: "<%= value %>",
-
-          // Function - Will fire on animation progression.
-          onAnimationProgress: function(){},
-
-          // Function - Will fire on animation completion.
-          onAnimationComplete: function(){}
-      };
 
 
   $scope.getInfos=function(id){
@@ -469,61 +228,78 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
 
   };
 
+  $scope.chartCreated=false;
 
-  angular.element(document).ready(function () {
-    var chart = new CanvasJS.Chart("chartContainer",
-    {
-      animationEnabled: true,
-      title:{
-        text: "Multi Series Spline Chart - Hide / Unhide via Legend"
-      },
-      data: [
+  $scope.chart=function(id){
+    //console.log(id);
+    //console.log("chartContainer"+id);
+    angular.element(document).ready(function () {
+
+
+
+      $scope.chartCreated=true;
+      chartTimeline = new CanvasJS.Chart("chartContainer",
       {
-        type: "spline", //change type to bar, line, area, pie, etc
-        showInLegend: true,
-        dataPoints: [
-          { x: 10, y: 51 },
-          { x: 20, y: 45},
-          { x: 30, y: 50 },
-          { x: 40, y: 62 },
-          { x: 50, y: 95 },
-          { x: 60, y: 66 },
-          { x: 70, y: 24 },
-          { x: 80, y: 32 },
-          { x: 90, y: 16}
-        ]
+        animationEnabled: true,
+        title:{
+          text: "Cronograma de gastos",
+          verticalAlign: "bottom", // "top", "center", "bottom"
+          horizontalAlign: "left" // "left", "right", "center"
         },
-        {
-        type: "spline",
-        showInLegend: true,
-        dataPoints: [
-          { x: 10, y: 21 },
-          { x: 20, y: 44},
-          { x: 30, y: 35 },
-          { x: 40, y: 45 },
-          { x: 50, y: 75 },
-          { x: 60, y: 58 },
-          { x: 70, y: 18 },
-          { x: 80, y: 30 },
-          { x: 90, y: 11}
+
+        backgroundColor: "lightgray",
+
+        data: [
+          {
+          type: "spline",
+          showInLegend: false,
+          dataPoints: [
+            { label: "Jan/15", y: 21 },
+            { label: "Fev/15", y: 44},
+            { label: "Mar/15", y: 35 },
+            { label: "Abr/15", y: 45 },
+            { label: "Mai/15", y: 75 },
+            { label: "Jun/15", y: 58 },
+            { label: "Jul/15", y: 18 },
+            { label: "Ago/15", y: 30 },
+            { label: "Set/15", y: 11}
+          ]
+          }
         ]
-        }
-      ],
-      legend: {
-        cursor: "pointer",
-        itemclick: function (e) {
-          if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-            e.dataSeries.visible = false;
-          } else {
-            e.dataSeries.visible = true;
-        }
-        chart.render();
-        }
-      }
+      });
+
+      chartTimeline.render();
+
+
+      chartProp = new CanvasJS.Chart("chartPropContainer",
+      {
+        animationEnabled: true,
+        title:{
+          text: "Convênios desse proponente",
+          verticalAlign: "bottom", // "top", "center", "bottom"
+          horizontalAlign: "left" // "left", "right", "center"
+        },
+
+        backgroundColor: "lightgray",
+
+        data: [
+          {
+          type: "column",
+          showInLegend: false,
+          dataPoints: [
+            { label: "2013", y: 21 },
+            { label: "2014", y: 44},
+            { label: "2015", y: 35 },
+            { label: "2016", y: 45 }
+          ]
+          }
+        ]
+      });
+
+      chartProp.render();
     });
 
-    chart.render();
-  });
+  };
 
 
 //console.log($state.params);
@@ -543,6 +319,7 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
         });
 
         $scope.getInfos($state.params.id);
+        $scope.chart($state.params.id);
 
       break;
     }

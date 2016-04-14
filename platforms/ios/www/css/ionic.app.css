@@ -19401,7 +19401,7 @@ ion-nav-view.has-alert {
   background-position: center;
   background-repeat: no-repeat; }
   .onboarding.onboardingOne {
-    background-image: url("../img/others_onboarding_one.png"), linear-gradient(#a1bcb3, #a1bcb3);
+    background-image: url("../img/others_onboarding_one.png"), linear-gradient(#509A8F, #509A8F);
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -ms-animation-name: fadeIn;
@@ -19438,7 +19438,7 @@ ion-nav-view.has-alert {
     -o-backface-visibility: hidden;
     backface-visibility: hidden; }
   .onboarding.onboardingTwo {
-    background-image: url("../img/others_onboarding_two.png"), linear-gradient(#c2c3c2, #b5dbcc);
+    background-image: url("../img/others_onboarding_two.png"), linear-gradient(#5EACA2, #5EACA2);
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -ms-animation-name: fadeIn;
@@ -19475,7 +19475,7 @@ ion-nav-view.has-alert {
     -o-backface-visibility: hidden;
     backface-visibility: hidden; }
   .onboarding.onboardingThree {
-    background-image: url("../img/others_onboarding_three.png"), linear-gradient(to right, #84a786, #bcd3cf);
+    background-image: url("../img/others_onboarding_three.png"), linear-gradient(to right, #6FC0B5, #6FC0B5);
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
     -ms-animation-name: fadeIn;
@@ -19534,8 +19534,13 @@ ion-nav-view.has-alert {
       font-size: 1.1rem; }
       .onboarding .slider ion-slide img {
         padding-bottom: 15px; }
+      .onboarding .slider ion-slide .onboardingButtons {
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+        left: 0px;
+        text-align: center; }
       .onboarding .slider ion-slide .button {
-        top: 10px;
         width: 110px;
         background-color: #2B4243; }
 
@@ -19558,10 +19563,28 @@ ion-nav-view.has-alert {
   .performerAdd .scroll {
     padding: 25px; }
 
-.slider-popup ion-slide {
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important; }
+.resume .col {
+  margin: 4px;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  text-align: center; }
+  .resume .col .title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem; }
+
+.timeline-body {
+  color: #595959; }
+
+.tab-wrap a {
+  color: #595959; }
+
+.local .slider-slides {
+  background-color: lightgray !important; }
 
 .before-bar-local-scroll {
   position: absolute;
@@ -19626,7 +19649,7 @@ ion-nav-view.has-alert {
   .local ion-content .slider .slider-slide {
     background-size: cover;
     background-position: center;
-    background-color: #F6FAFB;
+    background-color: lightgray;
     position: relative;
     text-align: center; }
     .local ion-content .slider .slider-slide a {
@@ -19656,6 +19679,7 @@ ion-nav-view.has-alert {
       position: relative; }
   .local ion-content .local-header {
     background-color: #597B80 !important;
+    top: -10px;
     padding: 0px !important; }
     .local ion-content .local-header h3 {
       width: calc(100% - 90px);

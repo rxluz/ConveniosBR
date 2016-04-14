@@ -6,14 +6,14 @@
 
   &.onboardingOne{
     //background-color: #a43e3c;
-    background-image: url("../img/others_onboarding_one.png"),linear-gradient(#a1bcb3, #a1bcb3);
+    background-image: url("../img/others_onboarding_one.png"),linear-gradient(#509A8F, #509A8F);
     @include fadeIn(
       $duration: 2.5s
     );
   }
 
   &.onboardingTwo{
-    background-image: url("../img/others_onboarding_two.png"),linear-gradient(#c2c3c2, #b5dbcc);
+    background-image: url("../img/others_onboarding_two.png"),linear-gradient(#5EACA2, #5EACA2);
 
 
 
@@ -23,7 +23,7 @@
   }
 
   &.onboardingThree{
-    background-image: url("../img/others_onboarding_three.png"),linear-gradient(to right, #84a786, #bcd3cf);
+    background-image: url("../img/others_onboarding_three.png"),linear-gradient(to right, #6FC0B5, #6FC0B5);
 
     @include fadeIn(
       $duration: 2.5s
@@ -61,8 +61,16 @@
         padding-bottom: 15px;
       }
 
+      .onboardingButtons{
+        position: absolute;
+        bottom: 100px;
+        width: 100%;
+        left: 0px;
+        text-align: center;
+
+      }
       .button{
-        top: 10px;
+        
         width: 110px;
         background-color: #2B4243;
       }

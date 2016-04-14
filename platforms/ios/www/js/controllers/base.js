@@ -7,9 +7,7 @@ app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
 
   $rootScope.route = {
     start: function(){
-      //$rootScope.header.search.isVisible=true;
-      //$rootScope.header.search.tip.review.show=showReviewTip;
-      //$rootScope.header.search.showResults=false;
+ 
       $ionicSideMenuDelegate.toggleLeft(false);
       $rootScope.menu.bottom.status="closed";
       $rootScope.header.buttons.bottom=false;
