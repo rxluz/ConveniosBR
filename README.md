@@ -81,6 +81,11 @@ O projeto detecta automaticamente quando o usuário possui um recurso de acessib
 	ionic state restore
 	bower install
 
+**Executar versão para web**
+
+	ionic serve
+
+
 ## Executando a versão para Android
 
 Dentro do projeto existe na pasta  [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) os executáveis para que o projeto possa ser visualizado no Android.
