@@ -96,7 +96,7 @@ Dentro do projeto existe na pasta  [`platforms/android/build/outputs/apk`](https
 
 ## Executando a versão para iOS
 
-Dentro do projeto existe na pasta  [`platforms/ios/`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) existe o arquivo `ConveniosBR.xcodeproj`, como ele é possível abrir o projeto dentro do Xcode e executar em qualquer dispositivo ou simulador iOS, o arquivo funciona somente se todo o conteúdo da pasta aonde está presente for baixado.
+Dentro do projeto existe na pasta  [`platforms/ios/`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) existe o arquivo `ConveniosBR.xcodeproj`, como ele é possível abrir o projeto dentro do Xcode e executar em qualquer dispositivo ou simulador iOS, o arquivo funciona somente se todo o conteúdo da pasta aonde ele está presente for baixado.
 
 ## Desenvolvimento
 
