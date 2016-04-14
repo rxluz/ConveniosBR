@@ -496,7 +496,7 @@ app.run(function($rootScope, $ionicBackdrop, $ionicSideMenuDelegate, $window, $s
       isVisible: function(){
         //console.log();
 
-        if($rootScope.header.buttons.bottom===true && $rootScope.menu.left.isVisible()===false && $rootScope.notification.display===false && $rootScope.header.search.isVisible===false && $ionicTabsDelegate.selectedIndex()===0){
+        if($rootScope.header.buttons.bottom===true && $rootScope.menu.left.isVisible()===false && $rootScope.notification.display===false && $rootScope.header.search.isVisible===false){
           return true;
         }
 
@@ -807,16 +807,49 @@ app.run(function($rootScope, $ionicBackdrop, $ionicSideMenuDelegate, $window, $s
 
 
   $rootScope.ratingsObject = {
-        iconOn : 'ion-ios-star',
-        iconOff : 'ion-ios-star-outline',
-        iconOnColor: 'rgb(200, 200, 100)',
-        iconOffColor:  'rgb(200, 100, 100)',
-        rating:  1,
-        minRating:1,
-        callback: function(rating) {
-          $scope.ratingsCallback(rating);
-        }
-      };
+    iconOn : 'ion-ios-star',
+    iconOff : 'ion-ios-star-outline',
+    iconOnColor: 'rgb(200, 200, 100)',
+    iconOffColor:  'rgb(200, 100, 100)',
+    rating:  1,
+    minRating:1,
+    callback: function(rating) {
+      $scope.ratingsCallback(rating);
+    }
+  };
+
+
+
+  $rootScope.timeObject = {
+    iconOn : 'ion-ios-timer',
+    iconOff : 'ion-ios-timer-outline',
+    iconOnColor: 'rgb(200, 200, 100)',
+    iconOffColor:  'rgb(131, 131, 131)',
+    rating:  1,
+    minRating:1,
+    maxRating: 3,
+    callback: function(rating) {
+      $scope.ratingsCallback(rating);
+    }
+  };
+
+  $rootScope.moneyObject = {
+    iconOn : 'ion-ios-calculator',
+    iconOff : 'ion-ios-calculator-outline',
+    iconOnColor: 'rgb(200, 200, 100)',
+    iconOffColor:  'rgb(131, 131, 131)',
+    rating:  1,
+    minRating:1,
+    maxRating: 3,
+    callback: function(rating) {
+      $scope.ratingsCallback(rating);
+    }
+  };
+
+
+  $rootScope.random = function() {
+    return 0.5 - Math.random();
+  };
 
       $rootScope.ratingsCallback = function(rating) {
         console.log('Selected rating is : ', rating);
@@ -857,7 +890,30 @@ app.run(function($rootScope, $ionicBackdrop, $ionicSideMenuDelegate, $window, $s
         return function(htmlCode){
             return $sce.trustAsHtml(htmlCode);
         };
-}]);
+}])
+.filter('cut', function () {
+    return function (value, wordwise, max, tail) {
+        if (!value) return '';
+
+        max = parseInt(max, 10);
+        if (!max) return value;
+        if (value.length <= max) return value;
+
+        value = value.substr(0, max);
+        if (wordwise) {
+            var lastspace = value.lastIndexOf(' ');
+            if (lastspace != -1) {
+              //Also remove . and , so its gives a cleaner result.
+              if (value.charAt(lastspace-1) == '.' || value.charAt(lastspace-1) == ',') {
+                lastspace = lastspace - 1;
+              }
+              value = value.substr(0, lastspace);
+            }
+        }
+
+        return value + (tail || ' …');
+    };
+});
 
 // .config(function($sceDelegateProvider) {
 //    $sceDelegateProvider.resourceUrlWhitelist([

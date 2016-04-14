@@ -56,14 +56,6 @@
       <ion-scroll>
         <div class='userOptions menuItems' ng-if="loginInfos.isOpen && loginInfos.isLogged">
           <ul class="list" ng-controller="User" >
-            <a href="#" class="item item-icon-left"  ui-sref="user.places"  menu-close>
-              <i class="icon flaticon-favorite"></i>Meus locais
-            </a>
-
-            <a href="#" class="item item-icon-left"  ui-sref="user.reviews"  menu-close>
-              <i class="icon flaticon-shape"></i>Locais avaliados
-            </a>
-
 
             <a href="#" class="item item-icon-left"  ui-sref="user.edit"  menu-close>
               <i class="icon flaticon-social"></i>Editar meu perfil
@@ -85,28 +77,29 @@
 
         <div class='main menuItems' ng-if="!loginInfos.isOpen || !loginInfos.isLogged">
           <ul class="list">
-            <a href="#" class="item item-icon-left" ng-click="route.start()" menu-close>
-              <i class="icon flaticon-transport"></i>Criar rota segura
-            </a>
-
             <a href="#" ng-click="header.search.init(false)" class="item item-icon-left" menu-close>
-              <i class="icon flaticon-interface"></i>Pesquisar um local
+              <i class="icon flaticon-interface"></i>Pesquisar um convênio
             </a>
 
             <a href="#" class="item item-icon-left" ng-click="header.search.init(true)" menu-close>
-              <i class="icon flaticon-shapes"></i>Avaliar um local
+              <i class="icon flaticon-tool"></i>Filtrar resultados
             </a>
 
             <a href="#" class="item item-icon-left" ng-click="header.search.init(false, true)" menu-close>
-              <i class="icon flaticon-map-location"></i>Adicionar local ao mapa
+              <i class="icon flaticon-gps"></i>Convênios locais
             </a>
+
+            <a href="#" class="item item-icon-left" ng-click="header.search.init(false, true)" menu-close>
+              <i class="icon flaticon-editing"></i>Convênios monitorados
+            </a>
+
 
             <a href="#" ui-sref="others.feedback" class="item item-icon-left" menu-close>
               <i class="icon flaticon-people"></i>Feedback e suporte
             </a>
 
             <a href="#" ui-sref="others.about" class="item item-icon-left" menu-close>
-              <i class="icon flaticon-interface-1"></i>Sobre o Urban Maps
+              <i class="icon flaticon-interface-1"></i>Sobre o ConvêniosBR
             </a>
 
             <a href="#" class="item item-icon-left" menu-close>

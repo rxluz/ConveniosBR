@@ -67,7 +67,7 @@
     <splash density="port-xhdpi" src="resources/android/splash/drawable-port-xhdpi-screen.png" />
     <splash density="port-xxhdpi" src="resources/android/splash/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-    <name>Alerta Convênios</name>
+    <name>ConveniosBR</name>
     <description>
         Monitore os convênios do Governo Federal perto de você.
     </description>

@@ -1,4 +1,4 @@
-app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ionicBackdrop, $state, $ionicModal, $timeout, $ionicScrollDelegate, NgMap, $ionicPopover) {
+app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ionicBackdrop, $state, $ionicModal, $timeout, $ionicScrollDelegate, $ionicPopover) {
   $scope.$watch(function(){return $state.current.name;}, function(v){
     $scope.view(v);
   });
@@ -7,9 +7,7 @@ app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
 
   $rootScope.route = {
     start: function(){
-      //$rootScope.header.search.isVisible=true;
-      //$rootScope.header.search.tip.review.show=showReviewTip;
-      //$rootScope.header.search.showResults=false;
+ 
       $ionicSideMenuDelegate.toggleLeft(false);
       $rootScope.menu.bottom.status="closed";
       $rootScope.header.buttons.bottom=false;
@@ -18,7 +16,7 @@ app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
     },
 
     close: function(){
-      $rootScope.modal.close.start($rootScope.modal); 
+      $rootScope.modal.close.start($rootScope.modal);
     }
   };
 
@@ -44,7 +42,55 @@ app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
     fill: function(r){
     },
 
-    data: false
+    data: {
+      showTip: false,
+
+      test: 'hello',
+
+      getInfoTipText: function(name){
+        if(name=='ok'){
+          return "ola mundo";
+        }
+
+        return "olar";
+
+      },
+
+      getIconTip: function(){
+        return $scope.home.data.showTip===true ? ['titip-bottom-right titip-wrapped', 'titip-active'] : [];
+      },
+      getIconStatus: function(name, tip){
+        //console.log(name);
+        //class="titip-top-right titip-wrapped titip-info titip-active" data-title="Digite o nome do local que você deseja procurar"
+
+        if(typeof tip !== 'undefined'){
+
+
+          $scope.home.data.showTip=!$scope.home.data.showTip;
+        }
+
+        if(name=='ok'){
+          return  ['ion-checkmark-circled', 'icon', 'left'];
+        }
+
+        if(name=='danger'){
+          return ['flaticon-round-1', 'danger',  'icon', 'left'];
+        }
+
+
+        if(name=='warning'){
+          return ['flaticon-round-1', 'warning',  'icon', 'left'];
+        }
+
+
+
+        // {'':info.status=='ok', 'flaticon-round-1 danger':info.status=='danger', 'flaticon-round-1 warning': info.status=='warning':}
+
+      }
+
+
+
+    }
   };
 
 
@@ -58,12 +104,11 @@ app.controller('Base', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
           menu: true,
           search: true,
           bottom: true,
-          title: "Urban Maps",
+          title: "ConvêniosBR",
           class: "bar-calm"
         });
 
         $scope.home.start();
-
 
       break;
 

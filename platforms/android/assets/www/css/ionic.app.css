@@ -18051,43 +18051,6 @@ a {
       min-height: 25px;
       text-align: right; }
 
-[class*='titip'][data-title]:after {
-  -webkit-animation-name: bounceIn;
-  -moz-animation-name: bounceIn;
-  -ms-animation-name: bounceIn;
-  -o-animation-name: bounceIn;
-  animation-name: bounceIn;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
-  -o-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-duration: 2.5s;
-  -moz-animation-duration: 2.5s;
-  -ms-animation-duration: 2.5s;
-  -o-animation-duration: 2.5s;
-  animation-duration: 2.5s;
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;
-  animation-timing-function: ease;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
 ion-footer-bar {
   bottom: 20px !important;
   color: white;
@@ -18675,6 +18638,16 @@ ion-header-bar, .listHome {
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden; }
+    ion-header-bar.search ::-webkit-input-placeholder, .listHome.search ::-webkit-input-placeholder {
+      color: #F3F0F0 !important; }
+    ion-header-bar.search :-moz-placeholder, .listHome.search :-moz-placeholder {
+      /* Firefox 18- */
+      color: #F3F0F0 !important; }
+    ion-header-bar.search ::-moz-placeholder, .listHome.search ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #F3F0F0 !important; }
+    ion-header-bar.search :-ms-input-placeholder, .listHome.search :-ms-input-placeholder {
+      color: #F3F0F0 !important; }
     ion-header-bar.search form, .listHome.search form {
       width: calc(100% - 100px); }
     ion-header-bar.search button.search, .listHome.search button.search {
@@ -18850,11 +18823,11 @@ ion-side-menu .top, ion-side-menu .logged {
   text-align: left; }
 
 ion-side-menu .top {
-  height: 92px; }
+  height: 92px;
+  text-align: center; }
   ion-side-menu .top img {
-    height: 92%;
+    height: 95%;
     padding-bottom: 0px;
-    padding-left: 17px;
     padding-top: 20px; }
 
 ion-side-menu .buttons {
@@ -18885,7 +18858,29 @@ ion-side-menu ion-scroll {
     ion-side-menu ion-scroll .item .icon {
       font-size: 23px; }
 
+.flaticon-round-1.danger {
+  color: #840E0E !important; }
+
+.flaticon-round-1.warning {
+  color: #A29905 !important; }
+
+.home ion-item a, .search ion-item a {
+  color: #595959 !important;
+  font-size: 0.7rem !important;
+  text-decoration: underline !important; }
+
+.home ion-item p, .search ion-item p {
+  max-height: 100px;
+  overflow: hidden; }
+
+.home ion-item label, .search ion-item label {
+  color: #595959 !important;
+  font-size: 0.7rem !important; }
+  .home ion-item label i.icon, .search ion-item label i.icon {
+    padding-right: 10px; }
+
 ion-view.home ion-content {
+  background-color: rgba(128, 128, 128, 0.1) !important;
   height: 100%; }
   ion-view.home ion-content .scroll {
     height: 100% !important; }
@@ -19548,7 +19543,7 @@ ion-nav-view.has-alert {
   background-color: #F8F8F8;
   text-align: center; }
   .about img {
-    max-width: 70%; }
+    max-width: 100%; }
   .about .list {
     margin-bottom: 30px !important; }
   .about ion-item {
@@ -19563,10 +19558,28 @@ ion-nav-view.has-alert {
   .performerAdd .scroll {
     padding: 25px; }
 
-.slider-popup ion-slide {
-  background-size: contain !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important; }
+.resume .col {
+  margin: 4px;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  text-align: center; }
+  .resume .col .title {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 0.8rem; }
+
+.timeline-body {
+  color: #595959; }
+
+.tab-wrap a {
+  color: #595959; }
+
+.slider-slides {
+  background-color: lightgray !important; }
 
 .before-bar-local-scroll {
   position: absolute;
@@ -19631,7 +19644,7 @@ ion-nav-view.has-alert {
   .local ion-content .slider .slider-slide {
     background-size: cover;
     background-position: center;
-    background-color: #F6FAFB;
+    background-color: lightgray;
     position: relative;
     text-align: center; }
     .local ion-content .slider .slider-slide a {
@@ -19661,6 +19674,7 @@ ion-nav-view.has-alert {
       position: relative; }
   .local ion-content .local-header {
     background-color: #597B80 !important;
+    top: -10px;
     padding: 0px !important; }
     .local ion-content .local-header h3 {
       width: calc(100% - 90px);
