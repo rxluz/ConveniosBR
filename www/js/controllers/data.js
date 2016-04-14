@@ -454,7 +454,7 @@ app.controller('Data', function($scope, $ionicSideMenuDelegate, $rootScope, $ion
   }
 ];
 
-//alert(1);
+///alert(1);
 
 
   $scope.shareAnywhere = function() {

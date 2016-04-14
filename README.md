@@ -20,6 +20,7 @@
 
 # Sobre
 --------
+<img align=left hspace=10 src="https://github.com/rxluz/ConveniosBR/raw/master/resources/ios/icon/icon-72%402x.png"></img>
 
 O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/ConveniosBR/blob/master/LICENSE.md) que visa criar uma solução compatível com as plataformas [iOS](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) e [Android](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) para monitorar os convênios firmados pelo governo federal, através dela o usuário pode:
 
@@ -64,7 +65,7 @@ O projeto detecta automaticamente quando o usuário possui um recurso de acessib
 # Instalando e configurando
 --------------------------
 
-**Caso você deseje apenas visualizar o projeto num smartphone Android baixe o APK disponível em [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk), para versão web acesse esse [link](http://api.appock.co/convenios.br/www).**
+**Caso você deseje apenas visualizar o projeto num smartphone Android baixe o APK (android-x86-debug.apk) disponível em [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk), para versão web acesse esse [link](http://api.appock.co/convenios.br/www).**
 
 **Clone este repositório.**
 
