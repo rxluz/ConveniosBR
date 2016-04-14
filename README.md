@@ -1,4 +1,5 @@
-## Sobre
+# Sobre
+--------
 
 O **ConvêniosBR** é um projeto open source que visa criar uma solução compatível com as plataformas iOS e Android para monitorar os convênios firmados pelo governo federal, através dela o usuário pode:
 
@@ -27,7 +28,8 @@ Os dados exibidos nesse projetos são extraídos a partir da [API Dados Abertos 
 O projeto detecta automaticamente quando o usuário possui um recurso de acessibilidade ativado (como o VoiceOver), e a partir desse momento exibe uma navegação em texto no lugar de imagens e ícones, permitindo que pessoas deficientes possam utilizar normalmente o **ConvêniosBR**.
 
 
-## Instalando e configurando
+# Instalando e configurando
+--------------------------
 
 **Clone este repositório.**
 
@@ -59,11 +61,129 @@ O ConvêniosBR é desenvolvido utilizando o framewok opensource [Ionic 1.2](http
 
 A partir do Ionic é gerado um código nativo para a plataforma Android e iOS.
 
-## Interfaces do projeto
 
-![Certificate Template](https://github.com/vmassuchetto/certificate-generator/raw/master/doc/certificate-template.png)
+# Interfaces do projeto
+-------------------------------------
+
+## Ícone e apresentação
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2662_1024.jpg" style="float: left !important;" width=50%></img>
+Ícone
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2663_1024.jpg" style="float: right !important;" width=50%></img>
+Splash screen
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2664_1024.jpg" style="float: right !important;" width=50%></img>
+Apresentação 1 (onboarding)
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2665_1024.jpg" style="float: right !important;" width=50%></img>
+Apresentação 2 (onboarding)
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2666_1024.jpg" style="float: right !important;" width=50%></img>
+Apresentação 3 (onboarding)
+
+## Login, notificações, menu
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2667_1024.jpg" style="float: right !important;" width=50%></img>
+Identificação (Login)
 
 
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2669_1024.jpg" style="float: right !important;" width=50%></img>
+Inscrição
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2671_1024.jpg" style="float: right !important;" width=50%></img>
+Sistema de notificações
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2678_1024.jpg" style="float: right !important;" width=50%></img>
+Menu de opções rápidas
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2670_1024.jpg" style="float: right !important;" width=50%></img>
+Menu deslogado
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2672_1024.jpg" style="float: right !important;" width=50%></img>
+Menu logado
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2673_1024.jpg" style="float: right !important;" width=50%></img>
+Opções do usuário
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2674_1024.jpg" style="float: right !important;" width=50%></img>
+Editar perfil
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2675_1024.jpg" style="float: right !important;" width=50%></img>
+Alterar senha
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2676_1024.jpg" style="float: right !important;" width=50%></img>
+Cancelar conta
+
+## Home, dicas e sistema de busca
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2677_1024.jpg" style="float: right !important;" width=50%></img>
+Tela principal (home)
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2697_1024.jpg" style="float: right !important;" width=50%></img>
+Sistema de dicas
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2679_1024.jpg" style="float: right !important;" width=50%></img>
+Formulário de busca
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2680_1024.jpg" style="float: right !important;" width=50%></img>
+Busca por voz
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2681_1024.jpg" style="float: right !important;" width=50%></img>
+Resultados da busca
+
+## Informações de um convênio
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2683_1024.jpg" style="float: right !important;" width=50%></img>
+Visualização inicial do convênio e gráfico de cronograma de gastos
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2686_1024.jpg" style="float: right !important;" width=50%></img>
+Gráfico convênios desse proponente
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2684_1024.jpg" style="float: right !important;" width=50%></img>
+Abas de concedente, proponente e interveniente e justificativa do convênio
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2685_1024.jpg" style="float: right !important;" width=50%></img>
+Principais comentários para um convênio
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2687_1024.jpg" style="float: right !important;" width=50%></img>
+Opção para denunciar um convênio
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2688_1024.jpg" style="float: right !important;" width=50%></img>
+Informações financeiras de um convênio (inicio)
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2689_1024.jpg" style="float: right !important;" width=50%></img>
+Informações financeiras de um convênio (fim)
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2690_1024.jpg" style="float: right !important;" width=50%></img>
+Cronograma de atividades de um convênio
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2699_1024.jpg" style="float: right !important;" width=50%></img>
+Lista de todos os comentários de um convênio
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2691_1024.jpg" style="float: right !important;" width=50%></img>
+Marcar um comentário como impróprio
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2692_1024.jpg" style="float: right !important;" width=50%></img>
+Compartilhar as informações do convênio
+
+
+## Outras interfaces
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2693_1024.jpg" style="float: right !important;" width=50%></img>
+Envio de feedback e solicitação de suporte
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2694_1024.jpg" style="float: right !important;" width=50%></img>
+Sobre o ConvêniosBR (inicio)
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2695_1024.jpg" style="float: right !important;" width=50%></img>
+Sobre o ConvêniosBR (fim)
+
+
+<img src="https://raw.githubusercontent.com/rxluz/ConveniosBR/master/thumbs/thumb_IMG_2696_1024.jpg" style="float: right !important;" width=50%></img>
+Colaboradores do ConvêniosBR
+
+
+
+
+# Status do desenvolvimento
+----------------------------------------------------------
 ## Desenvolvimento consolidado
 Os seguintes itens já tiveram o seu desenvolvimento concluído:
 <table>
