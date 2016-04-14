@@ -40,6 +40,19 @@ O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/Convenio
 
 O acesso ao aplicativo é livre, entretanto para algumas funções será necessário o cadastro do usuário, esse cadastro pode ser feito a partir do formulário de inscrição disponível ou a partir do login via Facebook.
 
+Serão disponibilizadas para o Governo Federal/Ministério da Justiça em formato de relatório automático mensal as seguintes informações:
+
+* Perfil do cidadão/usuário
+	* Município/estado onde reside
+	* Idade
+	* Sexo
+
+* Convênios
+	* Lista dos principais convênios monitorados
+	* Lista de todos os convênios denunciados
+	* Comentários por convênio
+	* Informações estatísticas sobre os convênios monitorados e denunciados, tais como: principais proponentes, concedentes, valor aplicado, etc.
+
 ## Integração com a API Dados Abertos SICONV
 
 Os dados exibidos nesse projetos são extraídos a partir da [API Dados Abertos SINCONV](http://api.convenios.gov.br/siconv/doc/), no momento essa funcionalidade está em implantação, usando apenas uma base parcial de dados.
@@ -452,6 +465,6 @@ Os seguintes itens já tiveram o seu desenvolvimento concluído:
   <tr>
     <td>8</td>
     <td>A opção fechar informações sobre status da acessibilidade não funciona corretamente</td>
-    <td>Media</td>
+    <td>Média</td>
   </tr>
  </table>
