@@ -91,7 +91,7 @@ O projeto detecta automaticamente quando o usuário possui um recurso de acessib
 
 ## Executando a versão para Android
 
-Dentro do projeto existe na pasta  [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) os executáveis para que o projeto possa ser visualizado no Android.
+Dentro do projeto existe na pasta  [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) os executáveis para que o projeto possa ser executado no Android `(android-x86-debug.apk)`.
 
 
 ## Executando a versão para iOS
