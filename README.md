@@ -51,7 +51,7 @@ Serão disponibilizadas para o Governo Federal/Ministério da Justiça em format
 * Convênios
 	* Lista dos principais convênios monitorados
 	* Lista de todos os convênios denunciados
-	* Comentários por convênio
+	* Comentários e fotos por convênio
 	* Informações estatísticas sobre os convênios monitorados e denunciados, tais como: principais proponentes, concedentes, valor aplicado, etc.
 
 ## Integração com a API Dados Abertos SICONV
@@ -67,7 +67,7 @@ O projeto detecta automaticamente quando o usuário possui um recurso de acessib
 
 **Caso você deseje apenas visualizar o projeto num smartphone Android baixe o APK (android-x86-debug.apk) disponível em [`platforms/android/build/outputs/apk`](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk), para versão web acesse esse [link](http://api.appock.co/convenios.br/www).**
 
-Caso você não saiba realizar a instalação de um arquivo apk no seu Android acesse esse [link](http://www.tecmundo.com.br/tutorial/51473-android-como-instalar-aplicativos-apk.htm) para maiores informações.
+*Caso você não saiba realizar a instalação de um arquivo apk no seu Android acesse esse [link](http://www.tecmundo.com.br/tutorial/51473-android-como-instalar-aplicativos-apk.htm) para maiores informações.*
 
 **Clone este repositório.**
 
