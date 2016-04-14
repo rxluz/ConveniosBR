@@ -452,6 +452,6 @@ Os seguintes itens já tiveram o seu desenvolvimento concluído:
   <tr>
     <td>8</td>
     <td>A opção fechar informações sobre status da acessibilidade não funciona corretamente</td>
-    <td>Média</td>
+    <td>Media</td>
   </tr>
  </table>
