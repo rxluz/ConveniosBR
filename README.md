@@ -1,7 +1,7 @@
 # Sobre
 --------
 
-O **ConvêniosBR** é um projeto open source que visa criar uma solução compatível com as plataformas iOS e Android para monitorar os convênios firmados pelo governo federal, através dela o usuário pode:
+O **ConvêniosBR** é um projeto [open source](https://github.com/rxluz/ConveniosBR/blob/master/LICENSE.md) que visa criar uma solução compatível com as plataformas [iOS](https://github.com/rxluz/ConveniosBR/tree/master/platforms/ios) e [Android](https://github.com/rxluz/ConveniosBR/tree/master/platforms/android/build/outputs/apk) para monitorar os convênios firmados pelo governo federal, através dela o usuário pode:
 
  * Listar os convênios existentes na sua localidade (estado ou municipio)
  * Ver informações especificas de um determinado convênio
@@ -25,7 +25,7 @@ O acesso ao aplicativo é livre, entretanto para algumas funções será necess�
 Os dados exibidos nesse projetos são extraídos a partir da [API Dados Abertos SINCONV](http://api.convenios.gov.br/siconv/doc/), no momento essa funcionalidade está em implantação, usando apenas uma base parcial de dados.
 
 ## Acessibilidade
-O projeto detecta automaticamente quando o usuário possui um recurso de acessibilidade ativado (como o VoiceOver), e a partir desse momento exibe uma navegação em texto no lugar de imagens e ícones, permitindo que pessoas deficientes possam utilizar normalmente o **ConvêniosBR**.
+O projeto detecta automaticamente quando o usuário possui um recurso de acessibilidade ativado (como o VoiceOver), e a partir desse momento exibe uma navegação em texto no lugar de imagens e ícones, permitindo que pessoas deficientes possam utilizar normalmente o **ConvêniosBR**, também foi adicionado a busca por voz para facilitar busca de informações dentro do aplicativo.
 
 
 # Instalando e configurando
@@ -354,10 +354,20 @@ Os seguintes itens já tiveram o seu desenvolvimento concluído:
     <td>API para o banco de dados de informações especificas</td>
     <td>Alta</td>
   </tr>
-    <tr>
+  <tr>
     <td>27</td>
     <td>API para o banco de dados de informações especificas</td>
     <td>Alta</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Vídeo de divulgação do projeto</td>
+    <td>Média</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Redes sociais</td>
+    <td>Média</td>
   </tr>
 </table>
 
@@ -415,5 +425,10 @@ Os seguintes itens já tiveram o seu desenvolvimento concluído:
     <td>7</td>
     <td>O botão curtir aparece ativado para todos os comentários</td>
     <td>Alta</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>A opção fechar informações sobre status da acessibilidade não funciona corretamente</td>
+    <td>Média</td>
   </tr>
  </table>
