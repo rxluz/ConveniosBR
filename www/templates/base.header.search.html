@@ -1,7 +1,7 @@
 <div ng-if="header.search.isVisible && header.isVisible" label="Formulário da busca" title="Formulário da busca" role="application" class='search'>
   <ion-header-bar  class="bar bar-calm search">
       <div class="buttons">
-        <button tabindex=13 ng-click="header.search.isVisible=!header.search.isVisible;" title="Voltar para o inicio" label="Voltar para o Inicio" class="button button-icon flaticon-delete"></button>
+        <button tabindex=13 ng-click="header.search.isVisible=!header.search.isVisible;" title="Voltar para o inicio" label="Voltar para o Inicio" class="button button-icon flaticon-delete"></button> 
       </div>
 
       <form name="searchForm" id="searchForm" ng-click="header.search.tip.hide()" ng-class="header.search.tip.isVisible() ? ['titip-bottom-right', 'titip-active', 'titip-wrapped', 'titip-default']: []" class="" data-title="{{header.search.tip.text()}}" ng-submit="header.search.results.init()">

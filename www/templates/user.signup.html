@@ -5,7 +5,7 @@
         <div class='ion-group'>
           <div class="buttons fb" ng-if="!(signIn.login.facebook.isLogged())">
             <button class="button facebook" ng-click="signIn.login.facebook.start()">Inscrever-se com o Facebook</button>
-          </div>
+          </div> 
 
           <ion-item class="item-avatar-left item-text-wrap" ng-if="signIn.login.facebook.isLogged()">
             <img ng-src="{{loginInfos.photo()}}">

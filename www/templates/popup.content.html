@@ -2,7 +2,7 @@
   <div ng-class="'before-'+header.class"  ng-if="!header.search.isVisible && header.isVisible===true  && popupIsOpen===false">
     <ion-header-bar ng-class="header.classAdd || header.class" class="bar" role="banner" label="Cabeçalho" title="Cabeçalho" >
       <button tabindex=1 ng-if="header.buttons.menu" ng-click="menu.left.show()" class="button button-icon flaticon-three def">
-        <acb-info>Menu</acb-info>
+        <acb-info>Menu</acb-info> 
       </button>
       <button tabindex=2 ng-if="header.buttons.back && !header.buttons.menu" ng-click="popup.content.hide();"  class="button button-icon flaticon-delete def"><acb-info>Ir para o inicio</acb-info></button>
 
